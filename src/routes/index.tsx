@@ -279,10 +279,11 @@ function RevealPanel({
         <div className="sm:text-right">
           <p className="font-display text-2xl text-[var(--er-gold-bright)]">
             <span className="mr-1 text-3xl align-middle">{tier.emoji}</span>
-            {result.roundScore}
+            {result.baseScore}
+            <span className="text-base text-[var(--er-muted)]">/100</span>
           </p>
           <p className="text-xs text-[var(--er-muted)]">
-            {tier.label} · {result.baseScore}/100
+            {tier.label} · +{result.roundScore} runes
           </p>
         </div>
         <button
