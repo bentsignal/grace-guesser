@@ -192,288 +192,288 @@
     "id": 165605,
     "name": "Abandoned Cave",
     "region": "Caelid",
-    "x": 0.53136,
-    "y": 0.63524
+    "x": 0.55286,
+    "y": 0.70432
   },
   {
     "id": 165614,
     "name": "Aeonia Swamp Shore",
     "region": "Caelid",
-    "x": 0.51254,
-    "y": 0.67056
+    "x": 0.53979,
+    "y": 0.74053
   },
   {
     "id": 165613,
     "name": "Astray from Caelid Highway North",
     "region": "Caelid",
-    "x": 0.50434,
-    "y": 0.66531
+    "x": 0.52869,
+    "y": 0.73524
   },
   {
     "id": 164396,
     "name": "Bestial Sanctum",
     "region": "Caelid",
-    "x": 0.59616,
-    "y": 0.53199
+    "x": 0.61423,
+    "y": 0.59597
   },
   {
     "id": 165115,
     "name": "Caelem Ruins",
     "region": "Caelid",
-    "x": 0.50199,
-    "y": 0.62045
+    "x": 0.52185,
+    "y": 0.68131
   },
   {
     "id": 166776,
     "name": "Caelid Catacombs",
     "region": "Caelid",
-    "x": 0.52186,
-    "y": 0.71072
+    "x": 0.54889,
+    "y": 0.78608
   },
   {
     "id": 164370,
     "name": "Caelid Highway South",
     "region": "Caelid",
-    "x": 0.50202,
-    "y": 0.69155
+    "x": 0.52771,
+    "y": 0.75928
   },
   {
     "id": 166067,
     "name": "Cathedral of Dragon Communion",
     "region": "Caelid",
-    "x": 0.51364,
-    "y": 0.70824
+    "x": 0.54163,
+    "y": 0.78138
   },
   {
     "id": 166636,
     "name": "Chair-Crypt of Sellia",
     "region": "Caelid",
-    "x": 0.55149,
-    "y": 0.63106
+    "x": 0.57568,
+    "y": 0.69961
   },
   {
     "id": 164419,
     "name": "Chamber Outside the Plaza",
     "region": "Caelid",
-    "x": 0.59718,
-    "y": 0.71458
+    "x": 0.6272,
+    "y": 0.79704
   },
   {
     "id": 165582,
     "name": "Church of the Plague",
     "region": "Caelid",
-    "x": 0.56794,
-    "y": 0.64904
+    "x": 0.59338,
+    "y": 0.72216
   },
   {
     "id": 165909,
     "name": "Deep Siofra Well",
     "region": "Caelid",
-    "x": 0.52915,
-    "y": 0.61697
+    "x": 0.55261,
+    "y": 0.68164
   },
   {
     "id": 166660,
     "name": "Divine Tower of Caelid: Basement",
     "region": "Caelid",
-    "x": 0.55411,
-    "y": 0.58945
+    "x": 0.57539,
+    "y": 0.65565
   },
   {
     "id": 165621,
     "name": "Divine Tower of Caelid: Center",
     "region": "Caelid",
-    "x": 0.55245,
-    "y": 0.59128
+    "x": 0.57366,
+    "y": 0.65355
   },
   {
     "id": 166795,
     "name": "Dragonbarrow Cave",
     "region": "Caelid",
-    "x": 0.59506,
-    "y": 0.59943
+    "x": 0.6188,
+    "y": 0.67242
   },
   {
     "id": 164393,
     "name": "Dragonbarrow Fork",
     "region": "Caelid",
-    "x": 0.57806,
-    "y": 0.59763
+    "x": 0.60085,
+    "y": 0.66841
   },
   {
     "id": 164389,
     "name": "Dragonbarrow West",
     "region": "Caelid",
-    "x": 0.52975,
-    "y": 0.60942
+    "x": 0.55243,
+    "y": 0.6746
   },
   {
     "id": 164395,
     "name": "Farum Greatbridge",
     "region": "Caelid",
-    "x": 0.61372,
-    "y": 0.55397
+    "x": 0.63365,
+    "y": 0.62348
   },
   {
     "id": 164392,
     "name": "Fort Faroth",
     "region": "Caelid",
-    "x": 0.58558,
-    "y": 0.62275
+    "x": 0.61026,
+    "y": 0.69465
   },
   {
     "id": 164413,
     "name": "Fort Gael North",
     "region": "Caelid",
-    "x": 0.47634,
-    "y": 0.65308
+    "x": 0.50024,
+    "y": 0.71521
   },
   {
     "id": 166407,
     "name": "Gael Tunnel",
     "region": "Caelid",
-    "x": 0.47002,
-    "y": 0.63919
+    "x": 0.49359,
+    "y": 0.70341
   },
   {
     "id": 166583,
     "name": "Gaol Cave",
     "region": "Caelid",
-    "x": 0.48175,
-    "y": 0.66774
+    "x": 0.50726,
+    "y": 0.73383
   },
   {
     "id": 166177,
     "name": "Heart of Aeonia",
     "region": "Caelid",
-    "x": 0.53651,
-    "y": 0.66107
+    "x": 0.56268,
+    "y": 0.73067
   },
   {
     "id": 164382,
     "name": "Impassable Greatbridge",
     "region": "Caelid",
-    "x": 0.55235,
-    "y": 0.72113
+    "x": 0.58447,
+    "y": 0.80206
   },
   {
     "id": 165615,
     "name": "Inner Aeonia",
     "region": "Caelid",
-    "x": 0.53579,
-    "y": 0.65372
+    "x": 0.55963,
+    "y": 0.72371
   },
   {
     "id": 167410,
     "name": "Isolated Divine Tower",
     "region": "Caelid",
-    "x": 0.6025,
-    "y": 0.46508
+    "x": 0.61544,
+    "y": 0.52535
   },
   {
     "id": 165874,
     "name": "Isolated Merchant's Shack (Dragonbarrow)",
     "region": "Caelid",
-    "x": 0.51062,
-    "y": 0.5988
+    "x": 0.53145,
+    "y": 0.66285
   },
   {
     "id": 164394,
     "name": "Lenne's Rise",
     "region": "Caelid",
-    "x": 0.6279,
-    "y": 0.58194
+    "x": 0.64738,
+    "y": 0.65255
   },
   {
     "id": 165440,
     "name": "Minor Erdtree Catacombs",
     "region": "Caelid",
-    "x": 0.48731,
-    "y": 0.61125
+    "x": 0.50751,
+    "y": 0.67384
   },
   {
     "id": 164857,
     "name": "Rear Gael Tunnel Entrance",
     "region": "Caelid",
-    "x": 0.46278,
-    "y": 0.63654
+    "x": 0.48297,
+    "y": 0.69601
   },
   {
     "id": 164418,
     "name": "Redmane Castle Plaza",
     "region": "Caelid",
-    "x": 0.59603,
-    "y": 0.70998
+    "x": 0.62695,
+    "y": 0.78988
   },
   {
     "id": 164372,
     "name": "Rotview Balcony",
     "region": "Caelid",
-    "x": 0.47419,
-    "y": 0.627
+    "x": 0.49634,
+    "y": 0.68776
   },
   {
     "id": 166174,
     "name": "Sellia Backstreets",
     "region": "Caelid",
-    "x": 0.55583,
-    "y": 0.63568
+    "x": 0.57953,
+    "y": 0.70174
   },
   {
     "id": 164383,
     "name": "Sellia Crystal Tunnel",
     "region": "Caelid",
-    "x": 0.54356,
-    "y": 0.62634
+    "x": 0.56738,
+    "y": 0.69581
   },
   {
     "id": 167196,
     "name": "Sellia Hideaway",
     "region": "Caelid",
-    "x": 0.57972,
-    "y": 0.62822
+    "x": 0.6037,
+    "y": 0.70094
   },
   {
     "id": 164381,
     "name": "Sellia Under-Stair",
     "region": "Caelid",
-    "x": 0.55192,
-    "y": 0.64365
+    "x": 0.57623,
+    "y": 0.71244
   },
   {
     "id": 164374,
     "name": "Smoldering Church",
     "region": "Caelid",
-    "x": 0.45786,
-    "y": 0.61994
+    "x": 0.47974,
+    "y": 0.67899
   },
   {
     "id": 164379,
     "name": "Smoldering Wall",
     "region": "Caelid",
-    "x": 0.50804,
-    "y": 0.6426
+    "x": 0.53021,
+    "y": 0.70709
   },
   {
     "id": 164380,
     "name": "Southern Aeonia Swamp Bank",
     "region": "Caelid",
-    "x": 0.53853,
-    "y": 0.68463
+    "x": 0.56512,
+    "y": 0.75941
   },
   {
     "id": 166635,
     "name": "Starscourge Radahn",
     "region": "Caelid",
-    "x": 0.61321,
-    "y": 0.66073
+    "x": 0.63959,
+    "y": 0.73937
   },
   {
     "id": 167164,
     "name": "War-Dead Catacombs",
     "region": "Caelid",
-    "x": 0.62655,
-    "y": 0.59097
+    "x": 0.64899,
+    "y": 0.66791
   },
   {
     "id": 167195,
