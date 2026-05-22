@@ -903,6 +903,13 @@
     "y": 0.75207
   },
   {
+    "id": 164052,
+    "name": "Godrick the Grafted",
+    "region": "Limgrave",
+    "x": 0.31897,
+    "y": 0.70155
+  },
+  {
     "id": 164027,
     "name": "Groveside Cave",
     "region": "Limgrave",
@@ -915,6 +922,13 @@
     "region": "Limgrave",
     "x": 0.41492,
     "y": 0.69679
+  },
+  {
+    "id": 164047,
+    "name": "Liftside Chamber",
+    "region": "Limgrave",
+    "x": 0.31506,
+    "y": 0.71392
   },
   {
     "id": 164041,
@@ -966,6 +980,13 @@
     "y": 0.74101
   },
   {
+    "id": 164045,
+    "name": "Rampart Tower",
+    "region": "Limgrave",
+    "x": 0.31592,
+    "y": 0.72655
+  },
+  {
     "id": 164062,
     "name": "Saintsbridge",
     "region": "Limgrave",
@@ -980,6 +1001,13 @@
     "y": 0.81443
   },
   {
+    "id": 164049,
+    "name": "Secluded Cell",
+    "region": "Limgrave",
+    "x": 0.32336,
+    "y": 0.70593
+  },
+  {
     "id": 164032,
     "name": "Stormfoot Catacombs",
     "region": "Limgrave",
@@ -992,6 +1020,13 @@
     "region": "Limgrave",
     "x": 0.35876,
     "y": 0.73519
+  },
+  {
+    "id": 164044,
+    "name": "Stormveil Cliffside",
+    "region": "Limgrave",
+    "x": 0.32239,
+    "y": 0.74162
   },
   {
     "id": 163933,
@@ -1095,8 +1130,8 @@
     "id": 164425,
     "name": "Church of the Cuckoo",
     "region": "Liurnia of the Lakes",
-    "x": 0.17601,
-    "y": 0.51
+    "x": 0.1853,
+    "y": 0.5317
   },
   {
     "id": 164156,
@@ -1130,8 +1165,8 @@
     "id": 164428,
     "name": "Debate Parlor",
     "region": "Liurnia of the Lakes",
-    "x": 0.19295,
-    "y": 0.52118
+    "x": 0.2019,
+    "y": 0.54523
   },
   {
     "id": 164410,
@@ -1340,8 +1375,8 @@
     "id": 164426,
     "name": "Raya Lucaria Grand Library",
     "region": "Liurnia of the Lakes",
-    "x": 0.1821,
-    "y": 0.50273
+    "x": 0.19055,
+    "y": 0.52384
   },
   {
     "id": 166411,
@@ -1403,8 +1438,8 @@
     "id": 164429,
     "name": "Schoolhouse Classroom",
     "region": "Liurnia of the Lakes",
-    "x": 0.1991,
-    "y": 0.51521
+    "x": 0.2002,
+    "y": 0.54175
   },
   {
     "id": 166439,
@@ -1762,41 +1797,6 @@
     "region": "Stomveil Castle",
     "x": 0.33081,
     "y": 0.7384
-  },
-  {
-    "id": 164052,
-    "name": "Godrick the Grafted",
-    "region": "Stormveil Castle",
-    "x": 0.31897,
-    "y": 0.70155
-  },
-  {
-    "id": 164047,
-    "name": "Liftside Chamber",
-    "region": "Stormveil Castle",
-    "x": 0.31506,
-    "y": 0.71392
-  },
-  {
-    "id": 164045,
-    "name": "Rampart Tower",
-    "region": "Stormveil Castle",
-    "x": 0.31592,
-    "y": 0.72655
-  },
-  {
-    "id": 164049,
-    "name": "Secluded Cell",
-    "region": "Stormveil Castle",
-    "x": 0.32336,
-    "y": 0.70593
-  },
-  {
-    "id": 164044,
-    "name": "Stormveil Cliffside",
-    "region": "Stormveil Castle",
-    "x": 0.32239,
-    "y": 0.74162
   },
   {
     "id": 165581,
