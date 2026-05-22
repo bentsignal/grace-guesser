@@ -37,6 +37,6 @@ export function buildShareText(
   return [
     `Elden Ring MapTap · ${label}`,
     line.trim(),
-    `Grace: ${total}/${MAX_SCORE}`,
+    `Runes: ${total}/${MAX_SCORE}`,
   ].join("\n");
 }

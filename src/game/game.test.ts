@@ -94,7 +94,7 @@ describe("share", () => {
     });
     const text = buildShareText(results, "2026-05-22", 679);
     expect(text).toContain("Elden Ring MapTap · May 22");
-    expect(text).toContain("Grace: 679/1000");
+    expect(text).toContain("Runes: 679/1000");
   });
 });
 
