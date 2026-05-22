@@ -49,11 +49,13 @@ export function MapBoard({ actual, guess, onPick, interactive, actualLabel }: Ma
         crs: L.CRS.Simple,
         minZoom: -3,
         maxZoom: 2,
-        zoomControl: true,
+        zoomControl: false,
         attributionControl: false,
         zoomSnap: 0.25,
         maxBoundsViscosity: 1,
       });
+      // Put +/- in the bottom-left so it clears the logo; hidden on touch via CSS.
+      L.control.zoom({ position: "bottomleft" }).addTo(map);
       L.imageOverlay(MAP_IMAGE, bounds).addTo(map);
       map.setMaxBounds(bounds);
       map.fitBounds(bounds);

@@ -128,4 +128,16 @@ body {
   border-color: var(--er-line);
 }
 .leaflet-bar a:hover { background: #221c10; }
+.leaflet-bar a.leaflet-disabled {
+  background: #15120c;
+  color: var(--er-gold-bright);
+  opacity: 0.35;
+}
+
+/* Zoom buttons are for mouse/trackpad users; touch devices pinch instead. */
+@media (pointer: coarse) {
+  .leaflet-control-zoom {
+    display: none;
+  }
+}
 

@@ -197,24 +197,32 @@ function GuessPanel({
   onSubmit: () => void;
 }) {
   return (
-    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-      <div className="min-w-0">
-        <p className="text-xs uppercase tracking-widest text-[var(--er-muted)]">
-          Find this Site of Grace · ×{roundCfg.multiplier}
+    <div className="flex flex-col gap-4 sm:flex-row sm:items-stretch sm:gap-5">
+      <div className="flex min-w-0 flex-1 flex-col justify-center gap-2">
+        <div className="flex items-center gap-2.5">
+          <p className="text-xs uppercase tracking-[0.18em] text-[var(--er-muted)]">
+            Find this Site of Grace
+          </p>
+          <span className="er-chip font-display rounded-full px-2 py-0.5 text-[11px] leading-none">
+            ×{roundCfg.multiplier}
+          </span>
+        </div>
+        <p className="font-display er-title text-2xl leading-tight text-balance sm:text-3xl">
+          {grace.name}
         </p>
-        <p className="font-display er-title truncate text-2xl sm:text-3xl">{grace.name}</p>
         {roundCfg.showRegion ? (
-          <span className="er-chip mt-1 inline-block rounded-full px-2.5 py-0.5 text-xs">
+          <span className="er-chip w-fit rounded-full px-2.5 py-0.5 text-xs">
             {grace.region}
           </span>
         ) : (
-          <span className="mt-1 inline-block text-xs italic text-[var(--er-muted)]">
+          <span className="text-xs italic text-[var(--er-muted)]">
             region unknown — trust your memory
           </span>
         )}
       </div>
+      <div className="hidden w-px shrink-0 bg-[var(--er-line)] sm:block" />
       <button
-        className="er-btn shrink-0 rounded-md px-6 py-3 text-sm"
+        className="er-btn shrink-0 self-center rounded-md px-7 py-3.5 text-sm max-sm:w-full"
         disabled={!hasGuess}
         onClick={onSubmit}
       >
@@ -237,15 +245,18 @@ function RevealPanel({
 }) {
   const tier = tierFor(result.baseScore);
   return (
-    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-      <div className="min-w-0">
-        <p className="font-display er-title truncate text-xl">{grace.name}</p>
+    <div className="flex flex-col gap-4 sm:flex-row sm:items-stretch sm:gap-5">
+      <div className="flex min-w-0 flex-1 flex-col justify-center gap-1.5">
+        <p className="font-display er-title text-xl leading-tight text-balance sm:text-2xl">
+          {grace.name}
+        </p>
         <p className="text-xs text-[var(--er-muted)]">
-          {grace.region} · you were off by {(result.distance * 100).toFixed(1)}% of the map
+          {grace.region} · off by {(result.distance * 100).toFixed(1)}% of the map
         </p>
       </div>
-      <div className="flex items-center gap-4">
-        <div className="text-right">
+      <div className="hidden w-px shrink-0 bg-[var(--er-line)] sm:block" />
+      <div className="flex shrink-0 items-center justify-between gap-4 sm:justify-end">
+        <div className="sm:text-right">
           <p className="font-display text-2xl text-[var(--er-gold-bright)]">
             <span className="mr-1 text-3xl align-middle">{tier.emoji}</span>
             {result.roundScore}
@@ -254,7 +265,7 @@ function RevealPanel({
             {tier.label} · {result.baseScore}/100
           </p>
         </div>
-        <button className="er-btn shrink-0 rounded-md px-6 py-3 text-sm" onClick={onNext}>
+        <button className="er-btn shrink-0 rounded-md px-7 py-3.5 text-sm" onClick={onNext}>
           {isLast ? "See verdict" : "Next grace"}
         </button>
       </div>
