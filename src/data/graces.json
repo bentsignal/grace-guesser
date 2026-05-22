@@ -696,8 +696,8 @@
     "id": 166541,
     "name": "Cathedral of the Forsaken",
     "region": "Leyndell, Royal Capital",
-    "x": 0.46507,
-    "y": 0.33561
+    "x": 0.47021,
+    "y": 0.36894
   },
   {
     "id": 165199,
@@ -717,22 +717,22 @@
     "id": 166538,
     "name": "Elden Throne",
     "region": "Leyndell, Royal Capital",
-    "x": 0.46288,
-    "y": 0.36919
+    "x": 0.4649,
+    "y": 0.40561
   },
   {
     "id": 166536,
     "name": "Erdtree Sanctuary",
     "region": "Leyndell, Royal Capital",
-    "x": 0.44518,
-    "y": 0.36793
+    "x": 0.44897,
+    "y": 0.40251
   },
   {
     "id": 165527,
     "name": "Forsaken Depths",
     "region": "Leyndell, Royal Capital",
-    "x": 0.45406,
-    "y": 0.34401
+    "x": 0.45746,
+    "y": 0.3768
   },
   {
     "id": 167194,
@@ -745,29 +745,29 @@
     "id": 172681,
     "name": "Fractured Marika",
     "region": "Leyndell, Royal Capital",
-    "x": 0.47419,
-    "y": 0.38563
+    "x": 0.48102,
+    "y": 0.42616
   },
   {
     "id": 168677,
     "name": "Frenzied Flame Proscription",
     "region": "Leyndell, Royal Capital",
-    "x": 0.47353,
-    "y": 0.33231
+    "x": 0.47522,
+    "y": 0.36765
   },
   {
     "id": 167518,
     "name": "Leyndell Catacombs",
     "region": "Leyndell, Royal Capital",
-    "x": 0.44664,
-    "y": 0.35148
+    "x": 0.44733,
+    "y": 0.38653
   },
   {
     "id": 170680,
     "name": "Leyndell, Capital of Ash",
     "region": "Leyndell, Royal Capital",
-    "x": 0.44655,
-    "y": 0.34193
+    "x": 0.44891,
+    "y": 0.37326
   },
   {
     "id": 167128,
@@ -794,8 +794,8 @@
     "id": 166537,
     "name": "Queen's Bedchamber",
     "region": "Leyndell, Royal Capital",
-    "x": 0.45414,
-    "y": 0.35881
+    "x": 0.45734,
+    "y": 0.39394
   },
   {
     "id": 165472,
@@ -808,8 +808,8 @@
     "id": 166540,
     "name": "Underground Roadside",
     "region": "Leyndell, Royal Capital",
-    "x": 0.44473,
-    "y": 0.34696
+    "x": 0.44702,
+    "y": 0.37867
   },
   {
     "id": 167126,
