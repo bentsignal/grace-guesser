@@ -903,20 +903,6 @@
     "y": 0.75207
   },
   {
-    "id": 164043,
-    "name": "Gateside Chamber",
-    "region": "Limgrave",
-    "x": 0.30593,
-    "y": 0.68695
-  },
-  {
-    "id": 164052,
-    "name": "Godrick the Grafted",
-    "region": "Limgrave",
-    "x": 0.29758,
-    "y": 0.65485
-  },
-  {
     "id": 164027,
     "name": "Groveside Cave",
     "region": "Limgrave",
@@ -929,13 +915,6 @@
     "region": "Limgrave",
     "x": 0.41492,
     "y": 0.69679
-  },
-  {
-    "id": 164047,
-    "name": "Liftside Chamber",
-    "region": "Limgrave",
-    "x": 0.29247,
-    "y": 0.66622
   },
   {
     "id": 164041,
@@ -987,13 +966,6 @@
     "y": 0.74101
   },
   {
-    "id": 164045,
-    "name": "Rampart Tower",
-    "region": "Limgrave",
-    "x": 0.29275,
-    "y": 0.67894
-  },
-  {
     "id": 164062,
     "name": "Saintsbridge",
     "region": "Limgrave",
@@ -1008,13 +980,6 @@
     "y": 0.81443
   },
   {
-    "id": 164049,
-    "name": "Secluded Cell",
-    "region": "Limgrave",
-    "x": 0.30161,
-    "y": 0.65805
-  },
-  {
     "id": 164032,
     "name": "Stormfoot Catacombs",
     "region": "Limgrave",
@@ -1027,13 +992,6 @@
     "region": "Limgrave",
     "x": 0.35876,
     "y": 0.73519
-  },
-  {
-    "id": 164044,
-    "name": "Stormveil Cliffside",
-    "region": "Limgrave",
-    "x": 0.29758,
-    "y": 0.69208
   },
   {
     "id": 164042,
@@ -1804,6 +1762,48 @@
     "region": "Mt. Gelmir",
     "x": 0.23365,
     "y": 0.30559
+  },
+  {
+    "id": 164043,
+    "name": "Gateside Chamber",
+    "region": "Stomveil Castle",
+    "x": 0.33081,
+    "y": 0.7384
+  },
+  {
+    "id": 164052,
+    "name": "Godrick the Grafted",
+    "region": "Stormveil Castle",
+    "x": 0.31897,
+    "y": 0.70155
+  },
+  {
+    "id": 164047,
+    "name": "Liftside Chamber",
+    "region": "Stormveil Castle",
+    "x": 0.31506,
+    "y": 0.71392
+  },
+  {
+    "id": 164045,
+    "name": "Rampart Tower",
+    "region": "Stormveil Castle",
+    "x": 0.31592,
+    "y": 0.72655
+  },
+  {
+    "id": 164049,
+    "name": "Secluded Cell",
+    "region": "Stormveil Castle",
+    "x": 0.32336,
+    "y": 0.70593
+  },
+  {
+    "id": 164044,
+    "name": "Stormveil Cliffside",
+    "region": "Stormveil Castle",
+    "x": 0.32239,
+    "y": 0.74162
   },
   {
     "id": 165581,
