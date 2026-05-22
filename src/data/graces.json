@@ -1515,8 +1515,8 @@
     "id": 167414,
     "name": "Drainage Channel",
     "region": "Miquella's Haligtree",
-    "x": 0.60367,
-    "y": 0.07251
+    "x": 0.58974,
+    "y": 0.09599
   },
   {
     "id": 167412,
@@ -1536,8 +1536,8 @@
     "id": 167416,
     "name": "Haligtree Promenade",
     "region": "Miquella's Haligtree",
-    "x": 0.60761,
-    "y": 0.09112
+    "x": 0.59584,
+    "y": 0.11583
   },
   {
     "id": 167413,
@@ -1550,15 +1550,15 @@
     "id": 167418,
     "name": "Haligtree Town",
     "region": "Miquella's Haligtree",
-    "x": 0.59403,
-    "y": 0.09992
+    "x": 0.58364,
+    "y": 0.12357
   },
   {
     "id": 167417,
     "name": "Haligtree Town Plaza",
     "region": "Miquella's Haligtree",
-    "x": 0.58885,
-    "y": 0.0934
+    "x": 0.5766,
+    "y": 0.11652
   },
   {
     "id": 167411,
@@ -1571,8 +1571,8 @@
     "id": 167415,
     "name": "Prayer Room",
     "region": "Miquella's Haligtree",
-    "x": 0.59902,
-    "y": 0.07855
+    "x": 0.58713,
+    "y": 0.1025
   },
   {
     "id": 165746,
