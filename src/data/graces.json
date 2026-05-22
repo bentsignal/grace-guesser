@@ -682,8 +682,8 @@
     "id": 168116,
     "name": "Avenue Balcony",
     "region": "Leyndell, Royal Capital",
-    "x": 0.44149,
-    "y": 0.34838
+    "x": 0.44415,
+    "y": 0.38131
   },
   {
     "id": 165524,
@@ -703,15 +703,15 @@
     "id": 165199,
     "name": "Divine Bridge",
     "region": "Leyndell, Royal Capital",
-    "x": 0.41525,
-    "y": 0.36156
+    "x": 0.41785,
+    "y": 0.39285
   },
   {
     "id": 167193,
     "name": "East Capital Rampart",
     "region": "Leyndell, Royal Capital",
-    "x": 0.45736,
-    "y": 0.33644
+    "x": 0.45886,
+    "y": 0.36985
   },
   {
     "id": 166538,
@@ -738,8 +738,8 @@
     "id": 167194,
     "name": "Fortified Manor, First Floor",
     "region": "Leyndell, Royal Capital",
-    "x": 0.42651,
-    "y": 0.35762
+    "x": 0.42938,
+    "y": 0.38969
   },
   {
     "id": 172681,
@@ -773,8 +773,8 @@
     "id": 167128,
     "name": "Lower Capital Church",
     "region": "Leyndell, Royal Capital",
-    "x": 0.43711,
-    "y": 0.35194
+    "x": 0.4397,
+    "y": 0.38479
   },
   {
     "id": 165473,
@@ -815,8 +815,8 @@
     "id": 167126,
     "name": "West Capital Rampart",
     "region": "Leyndell, Royal Capital",
-    "x": 0.43769,
-    "y": 0.35782
+    "x": 0.44019,
+    "y": 0.39175
   },
   {
     "id": 164026,
