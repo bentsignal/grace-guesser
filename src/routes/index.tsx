@@ -297,11 +297,7 @@ function RevealPanel({
   );
 }
 
-function IntroOverlay({
-  onBegin,
-}: {
-  onBegin: () => void;
-}) {
+function IntroOverlay({ onBegin }: { onBegin: () => void }) {
   return (
     <div className="absolute inset-0 z-[1100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
       <div className="er-panel max-w-md rounded-xl p-7 flex flex-col gap-4 text-center">
@@ -310,7 +306,7 @@ function IntroOverlay({
         </h1>
         <div className="mx-auto h-px w-24 mt-2 mb-1 bg-[var(--er-line)]" />
         <p className="text-[var(--er-ink)]">
-          Each round, tap where you believe the grace lies.
+          Tap where you believe the grace lies.
         </p>
         <div className="mx-auto h-px w-24 mt-2 mb-3 bg-[var(--er-line)]" />
         <button
