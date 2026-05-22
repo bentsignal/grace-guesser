@@ -1,0 +1,366 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { MapBoard } from "../components/MapBoard";
+import { GRACES, dateLabel, selectDaily, todayKey } from "../game/daily";
+import { scoreRound, totalScore } from "../game/scoring";
+import { buildShareText, emojiFor, tierFor } from "../game/share";
+import { MAX_SCORE, ROUNDS, ROUND_COUNT } from "../game/config";
+import type { Grace, Point, RoundResult } from "../game/types";
+
+export const Route = createFileRoute("/")({ component: Home });
+
+type Phase = "intro" | "playing" | "done";
+const STORAGE_PREFIX = "er-maptap:";
+
+interface SavedGame {
+  dateKey: string;
+  results: RoundResult[];
+}
+
+function loadSaved(dateKey: string): SavedGame | null {
+  try {
+    const raw = localStorage.getItem(STORAGE_PREFIX + dateKey);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as SavedGame;
+    return parsed.dateKey === dateKey ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+function Home() {
+  const [mounted, setMounted] = useState(false);
+  const [dateKey, setDateKey] = useState("");
+  const [phase, setPhase] = useState<Phase>("intro");
+  const [roundIndex, setRoundIndex] = useState(0);
+  const [results, setResults] = useState<RoundResult[]>([]);
+  const [guess, setGuess] = useState<Point | null>(null);
+  const [revealed, setRevealed] = useState(false);
+
+  const daily: Grace[] = useMemo(
+    () => (dateKey ? selectDaily(dateKey) : []),
+    [dateKey],
+  );
+
+  useEffect(() => {
+    const key = todayKey();
+    setDateKey(key);
+    const saved = loadSaved(key);
+    if (saved && saved.results.length === ROUND_COUNT) {
+      setResults(saved.results);
+      setPhase("done");
+    }
+    setMounted(true);
+  }, []);
+
+  const current = daily[roundIndex];
+  const roundCfg = ROUNDS[roundIndex];
+  const runningTotal = totalScore(results);
+
+  const onPick = useCallback((p: Point) => setGuess(p), []);
+
+  const submit = useCallback(() => {
+    if (!guess || !current || revealed) return;
+    const r = scoreRound(guess, { x: current.x, y: current.y }, roundIndex);
+    setResults((prev) => [...prev, r]);
+    setRevealed(true);
+  }, [guess, current, revealed, roundIndex]);
+
+  const next = useCallback(() => {
+    if (roundIndex + 1 < ROUND_COUNT) {
+      setRoundIndex((i) => i + 1);
+      setGuess(null);
+      setRevealed(false);
+      return;
+    }
+    // finished
+    setResults((finalResults) => {
+      try {
+        localStorage.setItem(
+          STORAGE_PREFIX + dateKey,
+          JSON.stringify({ dateKey, results: finalResults } satisfies SavedGame),
+        );
+      } catch {
+        /* ignore quota / privacy mode */
+      }
+      return finalResults;
+    });
+    setPhase("done");
+  }, [roundIndex, dateKey]);
+
+  const begin = useCallback(() => {
+    setPhase("playing");
+    setRoundIndex(0);
+    setResults([]);
+    setGuess(null);
+    setRevealed(false);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="flex h-dvh items-center justify-center bg-[var(--er-bg)]">
+        <p className="font-display er-title text-2xl">Elden Ring MapTap</p>
+      </div>
+    );
+  }
+
+  const lastResult = revealed ? results[results.length - 1] : null;
+
+  return (
+    <div className="relative h-dvh w-full overflow-hidden bg-[var(--er-bg)]">
+      {/* The map fills the screen */}
+      <div className="absolute inset-0">
+        {phase === "playing" && current ? (
+          <MapBoard
+            actual={revealed ? { x: current.x, y: current.y } : null}
+            guess={guess}
+            onPick={onPick}
+            interactive={!revealed}
+            actualLabel={revealed ? current.name : undefined}
+          />
+        ) : (
+          <MapBoard actual={null} guess={null} onPick={() => {}} interactive={false} />
+        )}
+      </div>
+
+      {/* Top bar */}
+      <Header dateKey={dateKey} phase={phase} roundIndex={roundIndex} runningTotal={runningTotal} />
+
+      {/* Bottom control panel during play */}
+      {phase === "playing" && current && (
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1000] flex justify-center p-3 sm:p-5">
+          <div className="er-panel pointer-events-auto w-full max-w-2xl rounded-lg p-4 sm:p-5">
+            {!revealed ? (
+              <GuessPanel grace={current} roundCfg={roundCfg} hasGuess={!!guess} onSubmit={submit} />
+            ) : (
+              lastResult && (
+                <RevealPanel
+                  grace={current}
+                  result={lastResult}
+                  isLast={roundIndex + 1 === ROUND_COUNT}
+                  onNext={next}
+                />
+              )
+            )}
+          </div>
+        </div>
+      )}
+
+      {phase === "intro" && <IntroOverlay onBegin={begin} dateKey={dateKey} />}
+      {phase === "done" && (
+        <ResultsOverlay dateKey={dateKey} results={results} daily={daily} />
+      )}
+    </div>
+  );
+}
+
+function Header({
+  dateKey,
+  phase,
+  roundIndex,
+  runningTotal,
+}: {
+  dateKey: string;
+  phase: Phase;
+  roundIndex: number;
+  runningTotal: number;
+}) {
+  return (
+    <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] flex items-start justify-between p-3 sm:p-4">
+      <div className="er-panel pointer-events-auto rounded-md px-3 py-2">
+        <h1 className="font-display er-title text-lg leading-none sm:text-xl">Elden Ring MapTap</h1>
+        <p className="mt-1 text-xs text-[var(--er-muted)]">{dateLabel(dateKey)}</p>
+      </div>
+      {phase === "playing" && (
+        <div className="er-panel pointer-events-auto rounded-md px-3 py-2 text-right">
+          <p className="font-display text-sm text-[var(--er-gold-bright)]">
+            Round {roundIndex + 1}/{ROUND_COUNT}
+          </p>
+          <p className="text-xs text-[var(--er-muted)]">
+            Runes <span className="text-[var(--er-ink)]">{runningTotal}</span>
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function GuessPanel({
+  grace,
+  roundCfg,
+  hasGuess,
+  onSubmit,
+}: {
+  grace: Grace;
+  roundCfg: { multiplier: number; showRegion: boolean };
+  hasGuess: boolean;
+  onSubmit: () => void;
+}) {
+  return (
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="min-w-0">
+        <p className="text-xs uppercase tracking-widest text-[var(--er-muted)]">
+          Find this Site of Grace · ×{roundCfg.multiplier}
+        </p>
+        <p className="font-display er-title truncate text-2xl sm:text-3xl">{grace.name}</p>
+        {roundCfg.showRegion ? (
+          <span className="er-chip mt-1 inline-block rounded-full px-2.5 py-0.5 text-xs">
+            {grace.region}
+          </span>
+        ) : (
+          <span className="mt-1 inline-block text-xs italic text-[var(--er-muted)]">
+            region unknown — trust your memory
+          </span>
+        )}
+      </div>
+      <button
+        className="er-btn shrink-0 rounded-md px-6 py-3 text-sm"
+        disabled={!hasGuess}
+        onClick={onSubmit}
+      >
+        {hasGuess ? "Lay your guess" : "Tap the map"}
+      </button>
+    </div>
+  );
+}
+
+function RevealPanel({
+  grace,
+  result,
+  isLast,
+  onNext,
+}: {
+  grace: Grace;
+  result: RoundResult;
+  isLast: boolean;
+  onNext: () => void;
+}) {
+  const tier = tierFor(result.baseScore);
+  return (
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="min-w-0">
+        <p className="font-display er-title truncate text-xl">{grace.name}</p>
+        <p className="text-xs text-[var(--er-muted)]">
+          {grace.region} · you were off by {(result.distance * 100).toFixed(1)}% of the map
+        </p>
+      </div>
+      <div className="flex items-center gap-4">
+        <div className="text-right">
+          <p className="font-display text-2xl text-[var(--er-gold-bright)]">
+            <span className="mr-1 text-3xl align-middle">{tier.emoji}</span>
+            {result.roundScore}
+          </p>
+          <p className="text-xs text-[var(--er-muted)]">
+            {tier.label} · {result.baseScore}/100
+          </p>
+        </div>
+        <button className="er-btn shrink-0 rounded-md px-6 py-3 text-sm" onClick={onNext}>
+          {isLast ? "See verdict" : "Next grace"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function IntroOverlay({ onBegin, dateKey }: { onBegin: () => void; dateKey: string }) {
+  return (
+    <div className="absolute inset-0 z-[1100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
+      <div className="er-panel max-w-md rounded-xl p-7 text-center">
+        <h1 className="font-display er-title text-3xl sm:text-4xl">Elden Ring MapTap</h1>
+        <p className="mt-1 text-sm text-[var(--er-muted)]">{dateLabel(dateKey)}</p>
+        <div className="mx-auto my-5 h-px w-24 bg-[var(--er-line)]" />
+        <p className="text-[var(--er-ink)]">
+          Five Sites of Grace, one map of the Lands Between. Each round, tap where you believe the
+          grace lies. The closer your mark, the greater your reward.
+        </p>
+        <ul className="mt-4 space-y-1 text-left text-sm text-[var(--er-muted)]">
+          <li>· Rounds 1–3 reveal the region. Rounds 4–5 do not.</li>
+          <li>· Later graces are worth more — up to ×3.</li>
+          <li>· Pinch or scroll to zoom; one attempt per grace.</li>
+        </ul>
+        <button className="er-btn mt-6 w-full rounded-md py-3 text-sm" onClick={onBegin}>
+          Begin the journey
+        </button>
+        <p className="mt-3 text-xs text-[var(--er-muted)]">
+          Maximum grace: {MAX_SCORE} · {GRACES.length} graces in the pool
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function ResultsOverlay({
+  dateKey,
+  results,
+  daily,
+}: {
+  dateKey: string;
+  results: RoundResult[];
+  daily: Grace[];
+}) {
+  const total = totalScore(results);
+  const shareText = buildShareText(results, dateKey, total);
+  const [copied, setCopied] = useState(false);
+
+  const copy = useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setCopied(false);
+    }
+  }, [shareText]);
+
+  const pct = Math.round((total / MAX_SCORE) * 100);
+  const verdict =
+    pct >= 90 ? "Elden Lord" : pct >= 70 ? "Tarnished of renown" : pct >= 45 ? "Wandering Tarnished" : "Maidenless";
+
+  return (
+    <div className="absolute inset-0 z-[1100] flex items-center justify-center bg-black/75 p-4 backdrop-blur-sm">
+      <div className="er-panel max-h-[92dvh] w-full max-w-md overflow-y-auto rounded-xl p-6">
+        <h2 className="font-display er-title text-center text-2xl">Your Verdict</h2>
+        <p className="mt-1 text-center text-sm text-[var(--er-muted)]">{dateLabel(dateKey)}</p>
+
+        <div className="my-4 text-center">
+          <p className="font-display text-5xl text-[var(--er-gold-bright)]">{total}</p>
+          <p className="text-sm text-[var(--er-muted)]">of {MAX_SCORE} · {verdict}</p>
+        </div>
+
+        <ul className="space-y-2">
+          {results.map((r, i) => (
+            <li
+              key={i}
+              className="flex items-center justify-between rounded-md border border-[var(--er-line)] bg-black/30 px-3 py-2"
+            >
+              <span className="flex min-w-0 items-center gap-2">
+                <span className="text-xl">{emojiFor(r.baseScore)}</span>
+                <span className="min-w-0">
+                  <span className="block truncate text-sm text-[var(--er-ink)]">{daily[i]?.name}</span>
+                  <span className="block text-xs text-[var(--er-muted)]">
+                    {daily[i]?.region} · ×{ROUNDS[i].multiplier}
+                  </span>
+                </span>
+              </span>
+              <span className="font-display shrink-0 pl-2 text-right text-[var(--er-gold-bright)]">
+                {r.roundScore}
+                <span className="block text-xs text-[var(--er-muted)]">{r.baseScore}/100</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+
+        <pre className="mt-4 whitespace-pre-wrap rounded-md border border-[var(--er-line)] bg-black/40 p-3 text-center text-sm text-[var(--er-ink)]">
+          {shareText}
+        </pre>
+
+        <button className="er-btn mt-3 w-full rounded-md py-3 text-sm" onClick={copy}>
+          {copied ? "Copied to clipboard" : "Copy result"}
+        </button>
+        <p className="mt-3 text-center text-xs text-[var(--er-muted)]">
+          Return at dawn for five new graces.
+        </p>
+      </div>
+    </div>
+  );
+}

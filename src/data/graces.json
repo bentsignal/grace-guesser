@@ -1,0 +1,1871 @@
+[
+  {
+    "id": 165605,
+    "name": "Abandoned Cave",
+    "region": "Caelid",
+    "x": 0.53136,
+    "y": 0.63524
+  },
+  {
+    "id": 166768,
+    "name": "Abandoned Coffin",
+    "region": "Altus Plateau",
+    "x": 0.24507,
+    "y": 0.36652
+  },
+  {
+    "id": 168495,
+    "name": "Abductor Virgin",
+    "region": "Mt. Gelmir",
+    "x": 0.25568,
+    "y": 0.32392
+  },
+  {
+    "id": 164424,
+    "name": "Academy Crystal Cave",
+    "region": "Liurnia of the Lakes",
+    "x": 0.17035,
+    "y": 0.50877
+  },
+  {
+    "id": 164149,
+    "name": "Academy Gate Town",
+    "region": "Liurnia of the Lakes",
+    "x": 0.23405,
+    "y": 0.5494
+  },
+  {
+    "id": 165614,
+    "name": "Aeonia Swamp Shore",
+    "region": "Caelid",
+    "x": 0.51254,
+    "y": 0.67056
+  },
+  {
+    "id": 164026,
+    "name": "Agheel Lake North",
+    "region": "Limgrave",
+    "x": 0.37546,
+    "y": 0.70004
+  },
+  {
+    "id": 164626,
+    "name": "Agheel Lake South",
+    "region": "Limgrave",
+    "x": 0.40175,
+    "y": 0.7489
+  },
+  {
+    "id": 165581,
+    "name": "Ailing Village Outskirts",
+    "region": "Weeping Peninsula",
+    "x": 0.39498,
+    "y": 0.79855
+  },
+  {
+    "id": 167173,
+    "name": "Altar South",
+    "region": "Liurnia of the Lakes",
+    "x": 0.12899,
+    "y": 0.6484
+  },
+  {
+    "id": 167000,
+    "name": "Altus Highway Junction",
+    "region": "Altus Plateau",
+    "x": 0.3121,
+    "y": 0.35469
+  },
+  {
+    "id": 166995,
+    "name": "Altus Plateau",
+    "region": "Altus Plateau",
+    "x": 0.27993,
+    "y": 0.37446
+  },
+  {
+    "id": 164409,
+    "name": "Altus Tunnel",
+    "region": "Altus Plateau",
+    "x": 0.35158,
+    "y": 0.32215
+  },
+  {
+    "id": 167195,
+    "name": "Ancient Snow Valley Ruins",
+    "region": "Consecrated Snowfield",
+    "x": 0.6236,
+    "y": 0.20487
+  },
+  {
+    "id": 167152,
+    "name": "Apostate Derelict",
+    "region": "Consecrated Snowfield",
+    "x": 0.52735,
+    "y": 0.15965
+  },
+  {
+    "id": 164154,
+    "name": "Artist's Shack",
+    "region": "Liurnia of the Lakes",
+    "x": 0.27398,
+    "y": 0.5234
+  },
+  {
+    "id": 165112,
+    "name": "Artist's Shack",
+    "region": "Limgrave",
+    "x": 0.40917,
+    "y": 0.67803
+  },
+  {
+    "id": 165613,
+    "name": "Astray from Caelid Highway North",
+    "region": "Caelid",
+    "x": 0.50434,
+    "y": 0.66531
+  },
+  {
+    "id": 168028,
+    "name": "Audience Pathway",
+    "region": "Mt. Gelmir",
+    "x": 0.23964,
+    "y": 0.30145
+  },
+  {
+    "id": 165525,
+    "name": "Auriza Hero's Grave",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.46582,
+    "y": 0.32735
+  },
+  {
+    "id": 165610,
+    "name": "Auriza Side Tomb",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.47162,
+    "y": 0.31489
+  },
+  {
+    "id": 168116,
+    "name": "Avenue Balcony",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.44149,
+    "y": 0.34838
+  },
+  {
+    "id": 165492,
+    "name": "Behind Caria Manor",
+    "region": "Liurnia of the Lakes",
+    "x": 0.21507,
+    "y": 0.38296
+  },
+  {
+    "id": 163948,
+    "name": "Behind the Castle",
+    "region": "Weeping Peninsula",
+    "x": 0.37397,
+    "y": 0.86899
+  },
+  {
+    "id": 164403,
+    "name": "Bellum Church",
+    "region": "Liurnia of the Lakes",
+    "x": 0.22177,
+    "y": 0.42327
+  },
+  {
+    "id": 163959,
+    "name": "Beside the Crater-Pocked Glade",
+    "region": "Weeping Peninsula",
+    "x": 0.42113,
+    "y": 0.79682
+  },
+  {
+    "id": 163946,
+    "name": "Beside the Rampart Gaol",
+    "region": "Weeping Peninsula",
+    "x": 0.37121,
+    "y": 0.87377
+  },
+  {
+    "id": 164396,
+    "name": "Bestial Sanctum",
+    "region": "Caelid",
+    "x": 0.59616,
+    "y": 0.53199
+  },
+  {
+    "id": 164167,
+    "name": "Black Knife Catacombs",
+    "region": "Altus Plateau",
+    "x": 0.28948,
+    "y": 0.42287
+  },
+  {
+    "id": 166186,
+    "name": "Boilprawn Shack",
+    "region": "Liurnia of the Lakes",
+    "x": 0.21944,
+    "y": 0.57006
+  },
+  {
+    "id": 166993,
+    "name": "Bower of Bounty",
+    "region": "Altus Plateau",
+    "x": 0.3324,
+    "y": 0.31044
+  },
+  {
+    "id": 165482,
+    "name": "Bridge of Iniquity",
+    "region": "Mt. Gelmir",
+    "x": 0.29538,
+    "y": 0.30146
+  },
+  {
+    "id": 163964,
+    "name": "Bridge of Sacrifice",
+    "region": "Weeping Peninsula",
+    "x": 0.41287,
+    "y": 0.77824
+  },
+  {
+    "id": 165115,
+    "name": "Caelem Ruins",
+    "region": "Caelid",
+    "x": 0.50199,
+    "y": 0.62045
+  },
+  {
+    "id": 166776,
+    "name": "Caelid Catacombs",
+    "region": "Caelid",
+    "x": 0.52186,
+    "y": 0.71072
+  },
+  {
+    "id": 164370,
+    "name": "Caelid Highway South",
+    "region": "Caelid",
+    "x": 0.50202,
+    "y": 0.69155
+  },
+  {
+    "id": 165524,
+    "name": "Capital Rampart",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.45415,
+    "y": 0.32413
+  },
+  {
+    "id": 166853,
+    "name": "Castellan's Hall",
+    "region": "Altus Plateau",
+    "x": 0.30345,
+    "y": 0.27254
+  },
+  {
+    "id": 163949,
+    "name": "Castle Morne Lift",
+    "region": "Weeping Peninsula",
+    "x": 0.38165,
+    "y": 0.85788
+  },
+  {
+    "id": 163952,
+    "name": "Castle Morne Rampart",
+    "region": "Weeping Peninsula",
+    "x": 0.40854,
+    "y": 0.81351
+  },
+  {
+    "id": 166630,
+    "name": "Castle Sol Main Gate",
+    "region": "Consecrated Snowfield",
+    "x": 0.62363,
+    "y": 0.16818
+  },
+  {
+    "id": 164415,
+    "name": "Castle Sol Rooftop",
+    "region": "Consecrated Snowfield",
+    "x": 0.63464,
+    "y": 0.1531
+  },
+  {
+    "id": 163928,
+    "name": "Castleward Tunnel",
+    "region": "Limgrave",
+    "x": 0.32344,
+    "y": 0.68454
+  },
+  {
+    "id": 166067,
+    "name": "Cathedral of Dragon Communion",
+    "region": "Caelid",
+    "x": 0.51364,
+    "y": 0.70824
+  },
+  {
+    "id": 166789,
+    "name": "Cathedral of Manus Celes",
+    "region": "Liurnia of the Lakes",
+    "x": 0.18086,
+    "y": 0.59867
+  },
+  {
+    "id": 166541,
+    "name": "Cathedral of the Forsaken",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.46507,
+    "y": 0.33561
+  },
+  {
+    "id": 163932,
+    "name": "Cave of Knowledge",
+    "region": "Limgrave",
+    "x": 0.36046,
+    "y": 0.73798
+  },
+  {
+    "id": 167161,
+    "name": "Cave of the Forlorn",
+    "region": "Consecrated Snowfield",
+    "x": 0.58947,
+    "y": 0.19906
+  },
+  {
+    "id": 166636,
+    "name": "Chair-Crypt of Sellia",
+    "region": "Caelid",
+    "x": 0.55149,
+    "y": 0.63106
+  },
+  {
+    "id": 164419,
+    "name": "Chamber Outside the Plaza",
+    "region": "Caelid",
+    "x": 0.59718,
+    "y": 0.71458
+  },
+  {
+    "id": 163997,
+    "name": "Church of Dragon Communion",
+    "region": "Limgrave",
+    "x": 0.32114,
+    "y": 0.76337
+  },
+  {
+    "id": 163934,
+    "name": "Church of Elleh",
+    "region": "Limgrave",
+    "x": 0.35112,
+    "y": 0.72628
+  },
+  {
+    "id": 165518,
+    "name": "Church of Inhibition",
+    "region": "Altus Plateau",
+    "x": 0.25338,
+    "y": 0.41606
+  },
+  {
+    "id": 163995,
+    "name": "Church of Pilgrimage",
+    "region": "Weeping Peninsula",
+    "x": 0.36594,
+    "y": 0.77391
+  },
+  {
+    "id": 165746,
+    "name": "Church of Repose",
+    "region": "Mountaintops of the Giants",
+    "x": 0.61164,
+    "y": 0.28275
+  },
+  {
+    "id": 164425,
+    "name": "Church of the Cuckoo",
+    "region": "Liurnia of the Lakes",
+    "x": 0.17601,
+    "y": 0.51
+  },
+  {
+    "id": 164416,
+    "name": "Church of the Eclipse",
+    "region": "Consecrated Snowfield",
+    "x": 0.6336,
+    "y": 0.16104
+  },
+  {
+    "id": 165582,
+    "name": "Church of the Plague",
+    "region": "Caelid",
+    "x": 0.56794,
+    "y": 0.64904
+  },
+  {
+    "id": 164156,
+    "name": "Church of Vows",
+    "region": "Liurnia of the Lakes",
+    "x": 0.23807,
+    "y": 0.48776
+  },
+  {
+    "id": 165459,
+    "name": "Cliffbottom Catacombs",
+    "region": "Liurnia of the Lakes",
+    "x": 0.29592,
+    "y": 0.60489
+  },
+  {
+    "id": 164030,
+    "name": "Coastal Cave",
+    "region": "Limgrave",
+    "x": 0.33248,
+    "y": 0.73933
+  },
+  {
+    "id": 165745,
+    "name": "Consecrated Snowfield",
+    "region": "Consecrated Snowfield",
+    "x": 0.55756,
+    "y": 0.25625
+  },
+  {
+    "id": 167155,
+    "name": "Consecrated Snowfield Catacombs",
+    "region": "Consecrated Snowfield",
+    "x": 0.58668,
+    "y": 0.23549
+  },
+  {
+    "id": 164158,
+    "name": "Converted Tower",
+    "region": "Liurnia of the Lakes",
+    "x": 0.14842,
+    "y": 0.58287
+  },
+  {
+    "id": 166759,
+    "name": "Craftsman's Shack",
+    "region": "Mt. Gelmir",
+    "x": 0.23751,
+    "y": 0.33888
+  },
+  {
+    "id": 164160,
+    "name": "Crystalline Woods",
+    "region": "Liurnia of the Lakes",
+    "x": 0.16412,
+    "y": 0.50227
+  },
+  {
+    "id": 164064,
+    "name": "Deathtouched Catacombs",
+    "region": "Limgrave",
+    "x": 0.37739,
+    "y": 0.653
+  },
+  {
+    "id": 164428,
+    "name": "Debate Parlor",
+    "region": "Liurnia of the Lakes",
+    "x": 0.19295,
+    "y": 0.52118
+  },
+  {
+    "id": 165909,
+    "name": "Deep Siofra Well",
+    "region": "Caelid",
+    "x": 0.52915,
+    "y": 0.61697
+  },
+  {
+    "id": 165199,
+    "name": "Divine Bridge",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.41525,
+    "y": 0.36156
+  },
+  {
+    "id": 166660,
+    "name": "Divine Tower of Caelid: Basement",
+    "region": "Caelid",
+    "x": 0.55411,
+    "y": 0.58945
+  },
+  {
+    "id": 165621,
+    "name": "Divine Tower of Caelid: Center",
+    "region": "Caelid",
+    "x": 0.55245,
+    "y": 0.59128
+  },
+  {
+    "id": 168027,
+    "name": "Divine Tower of East Altus",
+    "region": "Mountaintops of the Giants",
+    "x": 0.52096,
+    "y": 0.3764
+  },
+  {
+    "id": 167170,
+    "name": "Divine Tower of East Altus: Gate",
+    "region": "Mountaintops of the Giants",
+    "x": 0.52088,
+    "y": 0.37076
+  },
+  {
+    "id": 165579,
+    "name": "Divine Tower of Limgrave",
+    "region": "Limgrave",
+    "x": 0.41745,
+    "y": 0.61896
+  },
+  {
+    "id": 164410,
+    "name": "Divine Tower of Liurnia",
+    "region": "Liurnia of the Lakes",
+    "x": 0.33326,
+    "y": 0.52033
+  },
+  {
+    "id": 167409,
+    "name": "Divine Tower of West Altus",
+    "region": "Altus Plateau",
+    "x": 0.3973,
+    "y": 0.40817
+  },
+  {
+    "id": 166852,
+    "name": "Divine Tower of West Altus: Gate",
+    "region": "Altus Plateau",
+    "x": 0.399,
+    "y": 0.39603
+  },
+  {
+    "id": 166795,
+    "name": "Dragonbarrow Cave",
+    "region": "Caelid",
+    "x": 0.59506,
+    "y": 0.59943
+  },
+  {
+    "id": 164393,
+    "name": "Dragonbarrow Fork",
+    "region": "Caelid",
+    "x": 0.57806,
+    "y": 0.59763
+  },
+  {
+    "id": 164389,
+    "name": "Dragonbarrow West",
+    "region": "Caelid",
+    "x": 0.52975,
+    "y": 0.60942
+  },
+  {
+    "id": 167414,
+    "name": "Drainage Channel",
+    "region": "Miquella's Haligtree",
+    "x": 0.60367,
+    "y": 0.07251
+  },
+  {
+    "id": 163968,
+    "name": "Earthbore Cave",
+    "region": "Weeping Peninsula",
+    "x": 0.39315,
+    "y": 0.78494
+  },
+  {
+    "id": 167193,
+    "name": "East Capital Rampart",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.45736,
+    "y": 0.33644
+  },
+  {
+    "id": 166757,
+    "name": "East Gate Bridge Trestle",
+    "region": "Liurnia of the Lakes",
+    "x": 0.194,
+    "y": 0.47762
+  },
+  {
+    "id": 164179,
+    "name": "East Raya Lucaria Gate",
+    "region": "Liurnia of the Lakes",
+    "x": 0.2099,
+    "y": 0.45056
+  },
+  {
+    "id": 165586,
+    "name": "Eastern Liurnia Lake Shore",
+    "region": "Liurnia of the Lakes",
+    "x": 0.26321,
+    "y": 0.51438
+  },
+  {
+    "id": 164155,
+    "name": "Eastern Tableland",
+    "region": "Liurnia of the Lakes",
+    "x": 0.27487,
+    "y": 0.4918
+  },
+  {
+    "id": 166538,
+    "name": "Elden Throne",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.46288,
+    "y": 0.36919
+  },
+  {
+    "id": 167412,
+    "name": "Elphael Inner Wall",
+    "region": "Miquella's Haligtree",
+    "x": 0.58865,
+    "y": 0.06366
+  },
+  {
+    "id": 166536,
+    "name": "Erdtree Sanctuary",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.44518,
+    "y": 0.36793
+  },
+  {
+    "id": 167001,
+    "name": "Erdtree-Gazing Hill",
+    "region": "Altus Plateau",
+    "x": 0.27515,
+    "y": 0.35094
+  },
+  {
+    "id": 165606,
+    "name": "Fallen Ruins of the Lake",
+    "region": "Liurnia of the Lakes",
+    "x": 0.19964,
+    "y": 0.55526
+  },
+  {
+    "id": 164395,
+    "name": "Farum Greatbridge",
+    "region": "Caelid",
+    "x": 0.61372,
+    "y": 0.55397
+  },
+  {
+    "id": 166545,
+    "name": "Fire Giant",
+    "region": "Mountaintops of the Giants",
+    "x": 0.65879,
+    "y": 0.29546
+  },
+  {
+    "id": 165646,
+    "name": "First Church of Marika",
+    "region": "Consecrated Snowfield",
+    "x": 0.69678,
+    "y": 0.21188
+  },
+  {
+    "id": 165883,
+    "name": "First Mt. Gelmir Campsite",
+    "region": "Mt. Gelmir",
+    "x": 0.285,
+    "y": 0.29459
+  },
+  {
+    "id": 165503,
+    "name": "Folly on the Lake",
+    "region": "Liurnia of the Lakes",
+    "x": 0.1864,
+    "y": 0.58125
+  },
+  {
+    "id": 166546,
+    "name": "Foot of the Forge",
+    "region": "Mountaintops of the Giants",
+    "x": 0.63518,
+    "y": 0.27845
+  },
+  {
+    "id": 164161,
+    "name": "Foot of the Four Belfries",
+    "region": "Liurnia of the Lakes",
+    "x": 0.13158,
+    "y": 0.50481
+  },
+  {
+    "id": 165470,
+    "name": "Forbidden Lands",
+    "region": "Mountaintops of the Giants",
+    "x": 0.51686,
+    "y": 0.33959
+  },
+  {
+    "id": 166549,
+    "name": "Forest-Spanning Greatbridge",
+    "region": "Altus Plateau",
+    "x": 0.34278,
+    "y": 0.31495
+  },
+  {
+    "id": 166544,
+    "name": "Forge of The Giants",
+    "region": "Mountaintops of the Giants",
+    "x": 0.69307,
+    "y": 0.27004
+  },
+  {
+    "id": 165527,
+    "name": "Forsaken Depths",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.45406,
+    "y": 0.34401
+  },
+  {
+    "id": 164392,
+    "name": "Fort Faroth",
+    "region": "Caelid",
+    "x": 0.58558,
+    "y": 0.62275
+  },
+  {
+    "id": 164413,
+    "name": "Fort Gael North",
+    "region": "Caelid",
+    "x": 0.47634,
+    "y": 0.65308
+  },
+  {
+    "id": 164013,
+    "name": "Fort Haight West",
+    "region": "Limgrave",
+    "x": 0.44242,
+    "y": 0.72944
+  },
+  {
+    "id": 167194,
+    "name": "Fortified Manor, First Floor",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.42651,
+    "y": 0.35762
+  },
+  {
+    "id": 163993,
+    "name": "Fourth Church of Marika",
+    "region": "Weeping Peninsula",
+    "x": 0.32979,
+    "y": 0.80439
+  },
+  {
+    "id": 172681,
+    "name": "Fractured Marika",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.47419,
+    "y": 0.38563
+  },
+  {
+    "id": 168644,
+    "name": "Freezing Lake",
+    "region": "Consecrated Snowfield",
+    "x": 0.65997,
+    "y": 0.16239
+  },
+  {
+    "id": 168677,
+    "name": "Frenzied Flame Proscription",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.47353,
+    "y": 0.33231
+  },
+  {
+    "id": 166525,
+    "name": "Frenzied Flame Village Outskirts",
+    "region": "Altus Plateau",
+    "x": 0.27697,
+    "y": 0.42881
+  },
+  {
+    "id": 166407,
+    "name": "Gael Tunnel",
+    "region": "Caelid",
+    "x": 0.47002,
+    "y": 0.63919
+  },
+  {
+    "id": 166583,
+    "name": "Gaol Cave",
+    "region": "Caelid",
+    "x": 0.48175,
+    "y": 0.66774
+  },
+  {
+    "id": 164153,
+    "name": "Gate Town Bridge",
+    "region": "Liurnia of the Lakes",
+    "x": 0.26849,
+    "y": 0.56036
+  },
+  {
+    "id": 166500,
+    "name": "Gate Town North",
+    "region": "Liurnia of the Lakes",
+    "x": 0.20784,
+    "y": 0.50622
+  },
+  {
+    "id": 163926,
+    "name": "Gatefront",
+    "region": "Limgrave",
+    "x": 0.36002,
+    "y": 0.69505
+  },
+  {
+    "id": 164043,
+    "name": "Gateside Chamber",
+    "region": "Limgrave",
+    "x": 0.30593,
+    "y": 0.68695
+  },
+  {
+    "id": 166994,
+    "name": "Gelmir Hero's Grave",
+    "region": "Mt. Gelmir",
+    "x": 0.26443,
+    "y": 0.3069
+  },
+  {
+    "id": 167424,
+    "name": "Giant-Conquering Hero's Grave",
+    "region": "Mountaintops of the Giants",
+    "x": 0.58345,
+    "y": 0.26739
+  },
+  {
+    "id": 164431,
+    "name": "Giant's Gravepost",
+    "region": "Mountaintops of the Giants",
+    "x": 0.64082,
+    "y": 0.24221
+  },
+  {
+    "id": 167425,
+    "name": "Giants' Mountaintop Catacombs",
+    "region": "Mountaintops of the Giants",
+    "x": 0.59567,
+    "y": 0.26441
+  },
+  {
+    "id": 164052,
+    "name": "Godrick the Grafted",
+    "region": "Limgrave",
+    "x": 0.29758,
+    "y": 0.65485
+  },
+  {
+    "id": 165888,
+    "name": "Grand Lift of Dectus",
+    "region": "Altus Plateau",
+    "x": 0.27283,
+    "y": 0.38979
+  },
+  {
+    "id": 166548,
+    "name": "Grand Lift of Rold",
+    "region": "Mountaintops of the Giants",
+    "x": 0.56449,
+    "y": 0.29052
+  },
+  {
+    "id": 164027,
+    "name": "Groveside Cave",
+    "region": "Limgrave",
+    "x": 0.34851,
+    "y": 0.70834
+  },
+  {
+    "id": 167422,
+    "name": "Guest Hall",
+    "region": "Mt. Gelmir",
+    "x": 0.21431,
+    "y": 0.32267
+  },
+  {
+    "id": 167419,
+    "name": "Haligtree Canopy",
+    "region": "Miquella's Haligtree",
+    "x": 0.5886,
+    "y": 0.11816
+  },
+  {
+    "id": 167416,
+    "name": "Haligtree Promenade",
+    "region": "Miquella's Haligtree",
+    "x": 0.60761,
+    "y": 0.09112
+  },
+  {
+    "id": 167413,
+    "name": "Haligtree Roots",
+    "region": "Miquella's Haligtree",
+    "x": 0.60027,
+    "y": 0.06706
+  },
+  {
+    "id": 167418,
+    "name": "Haligtree Town",
+    "region": "Miquella's Haligtree",
+    "x": 0.59403,
+    "y": 0.09992
+  },
+  {
+    "id": 167417,
+    "name": "Haligtree Town Plaza",
+    "region": "Miquella's Haligtree",
+    "x": 0.58885,
+    "y": 0.0934
+  },
+  {
+    "id": 166177,
+    "name": "Heart of Aeonia",
+    "region": "Caelid",
+    "x": 0.53651,
+    "y": 0.66107
+  },
+  {
+    "id": 166534,
+    "name": "Hermit Merchant's Shack",
+    "region": "Altus Plateau",
+    "x": 0.41041,
+    "y": 0.29301
+  },
+  {
+    "id": 165640,
+    "name": "Hidden Path to the Haligtree",
+    "region": "Consecrated Snowfield",
+    "x": 0.55379,
+    "y": 0.26813
+  },
+  {
+    "id": 164066,
+    "name": "Highroad Cave",
+    "region": "Limgrave",
+    "x": 0.39303,
+    "y": 0.64477
+  },
+  {
+    "id": 163960,
+    "name": "Impaler's Catacombs",
+    "region": "Weeping Peninsula",
+    "x": 0.42502,
+    "y": 0.78369
+  },
+  {
+    "id": 164382,
+    "name": "Impassable Greatbridge",
+    "region": "Caelid",
+    "x": 0.55235,
+    "y": 0.72113
+  },
+  {
+    "id": 165615,
+    "name": "Inner Aeonia",
+    "region": "Caelid",
+    "x": 0.53579,
+    "y": 0.65372
+  },
+  {
+    "id": 167120,
+    "name": "Inner Consecrated Snowfield",
+    "region": "Consecrated Snowfield",
+    "x": 0.55938,
+    "y": 0.2203
+  },
+  {
+    "id": 167410,
+    "name": "Isolated Divine Tower",
+    "region": "Caelid",
+    "x": 0.6025,
+    "y": 0.46508
+  },
+  {
+    "id": 163992,
+    "name": "Isolated Merchant's Shack",
+    "region": "Weeping Peninsula",
+    "x": 0.32235,
+    "y": 0.82702
+  },
+  {
+    "id": 165874,
+    "name": "Isolated Merchant's Shack (Dragonbarrow)",
+    "region": "Caelid",
+    "x": 0.51062,
+    "y": 0.5988
+  },
+  {
+    "id": 167420,
+    "name": "Jarburg",
+    "region": "Liurnia of the Lakes",
+    "x": 0.296,
+    "y": 0.54117
+  },
+  {
+    "id": 164145,
+    "name": "Lake-Facing Cliffs",
+    "region": "Liurnia of the Lakes",
+    "x": 0.28299,
+    "y": 0.64372
+  },
+  {
+    "id": 166438,
+    "name": "Lakeside Crystal Cave",
+    "region": "Liurnia of the Lakes",
+    "x": 0.22188,
+    "y": 0.61468
+  },
+  {
+    "id": 164147,
+    "name": "Laskyar Ruins",
+    "region": "Liurnia of the Lakes",
+    "x": 0.25055,
+    "y": 0.60736
+  },
+  {
+    "id": 164394,
+    "name": "Lenne's Rise",
+    "region": "Caelid",
+    "x": 0.6279,
+    "y": 0.58194
+  },
+  {
+    "id": 167518,
+    "name": "Leyndell Catacombs",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.44664,
+    "y": 0.35148
+  },
+  {
+    "id": 170680,
+    "name": "Leyndell, Capital of Ash",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.44655,
+    "y": 0.34193
+  },
+  {
+    "id": 164047,
+    "name": "Liftside Chamber",
+    "region": "Limgrave",
+    "x": 0.29247,
+    "y": 0.66622
+  },
+  {
+    "id": 164041,
+    "name": "Limgrave Tower Bridge",
+    "region": "Limgrave",
+    "x": 0.31337,
+    "y": 0.67524
+  },
+  {
+    "id": 164024,
+    "name": "Limgrave Tunnels",
+    "region": "Limgrave",
+    "x": 0.36909,
+    "y": 0.70694
+  },
+  {
+    "id": 166210,
+    "name": "Liurna Tower Bridge",
+    "region": "Liurnia of the Lakes",
+    "x": 0.29367,
+    "y": 0.52968
+  },
+  {
+    "id": 164152,
+    "name": "Liurnia Highway North",
+    "region": "Liurnia of the Lakes",
+    "x": 0.28634,
+    "y": 0.58932
+  },
+  {
+    "id": 164151,
+    "name": "Liurnia Highway South",
+    "region": "Liurnia of the Lakes",
+    "x": 0.2878,
+    "y": 0.6229
+  },
+  {
+    "id": 164146,
+    "name": "Liurnia Lake Shore",
+    "region": "Liurnia of the Lakes",
+    "x": 0.26176,
+    "y": 0.62831
+  },
+  {
+    "id": 167128,
+    "name": "Lower Capital Church",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.43711,
+    "y": 0.35194
+  },
+  {
+    "id": 166767,
+    "name": "Magma Wyrm Makar",
+    "region": "Altus Plateau",
+    "x": 0.24288,
+    "y": 0.37605
+  },
+  {
+    "id": 164422,
+    "name": "Main Academy Gate",
+    "region": "Liurnia of the Lakes",
+    "x": 0.1804,
+    "y": 0.49721
+  },
+  {
+    "id": 164165,
+    "name": "Main Caria Manor Gate",
+    "region": "Liurnia of the Lakes",
+    "x": 0.19382,
+    "y": 0.40552
+  },
+  {
+    "id": 167411,
+    "name": "Malenia, Goddess of Rot",
+    "region": "Miquella's Haligtree",
+    "x": 0.5887,
+    "y": 0.07408
+  },
+  {
+    "id": 165494,
+    "name": "Manor Lower Level",
+    "region": "Liurnia of the Lakes",
+    "x": 0.18931,
+    "y": 0.39519
+  },
+  {
+    "id": 165493,
+    "name": "Manor Upper Level",
+    "region": "Liurnia of the Lakes",
+    "x": 0.20775,
+    "y": 0.39438
+  },
+  {
+    "id": 164641,
+    "name": "Margit, the Fell Omen",
+    "region": "Limgrave",
+    "x": 0.31566,
+    "y": 0.69005
+  },
+  {
+    "id": 165499,
+    "name": "Mausoleum Compound",
+    "region": "Liurnia of the Lakes",
+    "x": 0.25016,
+    "y": 0.44945
+  },
+  {
+    "id": 165440,
+    "name": "Minor Erdtree Catacombs",
+    "region": "Caelid",
+    "x": 0.48731,
+    "y": 0.61125
+  },
+  {
+    "id": 165473,
+    "name": "Minor Erdtree Church",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.39305,
+    "y": 0.37737
+  },
+  {
+    "id": 164014,
+    "name": "Mistwood Outskirts",
+    "region": "Limgrave",
+    "x": 0.42136,
+    "y": 0.69114
+  },
+  {
+    "id": 166807,
+    "name": "Moonlight Altar",
+    "region": "Liurnia of the Lakes",
+    "x": 0.15681,
+    "y": 0.61642
+  },
+  {
+    "id": 163945,
+    "name": "Morne Moangrave",
+    "region": "Weeping Peninsula",
+    "x": 0.36623,
+    "y": 0.88693
+  },
+  {
+    "id": 165304,
+    "name": "Morne Tunnel",
+    "region": "Weeping Peninsula",
+    "x": 0.37813,
+    "y": 0.81626
+  },
+  {
+    "id": 164021,
+    "name": "Murkwater Catacombs",
+    "region": "Limgrave",
+    "x": 0.39327,
+    "y": 0.67327
+  },
+  {
+    "id": 164023,
+    "name": "Murkwater Cave",
+    "region": "Limgrave",
+    "x": 0.38992,
+    "y": 0.69757
+  },
+  {
+    "id": 164861,
+    "name": "Murkwater Coast",
+    "region": "Limgrave",
+    "x": 0.39482,
+    "y": 0.68211
+  },
+  {
+    "id": 166543,
+    "name": "Ninth Mt. Gelmir Campsite",
+    "region": "Mt. Gelmir",
+    "x": 0.24208,
+    "y": 0.28272
+  },
+  {
+    "id": 164163,
+    "name": "Northern Liurnia Lake Shore",
+    "region": "Liurnia of the Lakes",
+    "x": 0.16214,
+    "y": 0.44435
+  },
+  {
+    "id": 165481,
+    "name": "Old Altus Tunnel",
+    "region": "Mt. Gelmir",
+    "x": 0.28896,
+    "y": 0.31685
+  },
+  {
+    "id": 167150,
+    "name": "Ordina, Liturgical Town",
+    "region": "Consecrated Snowfield",
+    "x": 0.54993,
+    "y": 0.1841
+  },
+  {
+    "id": 166533,
+    "name": "Outer Wall Battleground",
+    "region": "Altus Plateau",
+    "x": 0.40395,
+    "y": 0.3043
+  },
+  {
+    "id": 165475,
+    "name": "Outer Wall Phantom Tree",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.37544,
+    "y": 0.35361
+  },
+  {
+    "id": 166535,
+    "name": "Perfumer's Grotto",
+    "region": "Altus Plateau",
+    "x": 0.35905,
+    "y": 0.34972
+  },
+  {
+    "id": 167415,
+    "name": "Prayer Room",
+    "region": "Miquella's Haligtree",
+    "x": 0.59902,
+    "y": 0.07855
+  },
+  {
+    "id": 166777,
+    "name": "Primeval Sorcerer Azur",
+    "region": "Mt. Gelmir",
+    "x": 0.2543,
+    "y": 0.31672
+  },
+  {
+    "id": 168026,
+    "name": "Prison Town Church",
+    "region": "Mt. Gelmir",
+    "x": 0.22267,
+    "y": 0.31283
+  },
+  {
+    "id": 166537,
+    "name": "Queen's Bedchamber",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.45414,
+    "y": 0.35881
+  },
+  {
+    "id": 164045,
+    "name": "Rampart Tower",
+    "region": "Limgrave",
+    "x": 0.29275,
+    "y": 0.67894
+  },
+  {
+    "id": 166763,
+    "name": "Rampartside Path",
+    "region": "Altus Plateau",
+    "x": 0.36499,
+    "y": 0.32298
+  },
+  {
+    "id": 168421,
+    "name": "Ranni's Chamber",
+    "region": "Liurnia of the Lakes",
+    "x": 0.16658,
+    "y": 0.39188
+  },
+  {
+    "id": 165879,
+    "name": "Ranni's Rise",
+    "region": "Liurnia of the Lakes",
+    "x": 0.16418,
+    "y": 0.39202
+  },
+  {
+    "id": 165512,
+    "name": "Ravine-Veiled Village",
+    "region": "Liurnia of the Lakes",
+    "x": 0.26171,
+    "y": 0.37843
+  },
+  {
+    "id": 165498,
+    "name": "Raya Lucaria Crystal Tunnel",
+    "region": "Liurnia of the Lakes",
+    "x": 0.23101,
+    "y": 0.46165
+  },
+  {
+    "id": 164426,
+    "name": "Raya Lucaria Grand Library",
+    "region": "Liurnia of the Lakes",
+    "x": 0.1821,
+    "y": 0.50273
+  },
+  {
+    "id": 164857,
+    "name": "Rear Gael Tunnel Entrance",
+    "region": "Caelid",
+    "x": 0.46278,
+    "y": 0.63654
+  },
+  {
+    "id": 164418,
+    "name": "Redmane Castle Plaza",
+    "region": "Caelid",
+    "x": 0.59603,
+    "y": 0.70998
+  },
+  {
+    "id": 166411,
+    "name": "Revenger's Shack",
+    "region": "Liurnia of the Lakes",
+    "x": 0.13619,
+    "y": 0.54635
+  },
+  {
+    "id": 164406,
+    "name": "Road of Iniquity",
+    "region": "Mt. Gelmir",
+    "x": 0.22798,
+    "y": 0.29776
+  },
+  {
+    "id": 166783,
+    "name": "Road of Iniquity Side Path",
+    "region": "Altus Plateau",
+    "x": 0.34131,
+    "y": 0.26581
+  },
+  {
+    "id": 164164,
+    "name": "Road to the Manor",
+    "region": "Liurnia of the Lakes",
+    "x": 0.17391,
+    "y": 0.42613
+  },
+  {
+    "id": 164166,
+    "name": "Road's End Catacombs",
+    "region": "Liurnia of the Lakes",
+    "x": 0.13079,
+    "y": 0.57222
+  },
+  {
+    "id": 164372,
+    "name": "Rotview Balcony",
+    "region": "Caelid",
+    "x": 0.47419,
+    "y": 0.627
+  },
+  {
+    "id": 165489,
+    "name": "Royal Moongazing Grounds",
+    "region": "Liurnia of the Lakes",
+    "x": 0.19381,
+    "y": 0.38138
+  },
+  {
+    "id": 167002,
+    "name": "Ruin-Strewn Precipice",
+    "region": "Liurnia of the Lakes",
+    "x": 0.26307,
+    "y": 0.37696
+  },
+  {
+    "id": 166769,
+    "name": "Ruin-Strewn Precipice Overlook",
+    "region": "Liurnia of the Lakes",
+    "x": 0.2552,
+    "y": 0.37649
+  },
+  {
+    "id": 165500,
+    "name": "Ruined Labyrinth",
+    "region": "Liurnia of the Lakes",
+    "x": 0.25832,
+    "y": 0.46144
+  },
+  {
+    "id": 167572,
+    "name": "Rykard, Lord of Blasphemy",
+    "region": "Mt. Gelmir",
+    "x": 0.24044,
+    "y": 0.31025
+  },
+  {
+    "id": 166997,
+    "name": "Sage's Cave",
+    "region": "Altus Plateau",
+    "x": 0.26054,
+    "y": 0.34149
+  },
+  {
+    "id": 166999,
+    "name": "Sainted Hero's Grave",
+    "region": "Altus Plateau",
+    "x": 0.33399,
+    "y": 0.32657
+  },
+  {
+    "id": 164062,
+    "name": "Saintsbridge",
+    "region": "Limgrave",
+    "x": 0.38776,
+    "y": 0.65327
+  },
+  {
+    "id": 166437,
+    "name": "Scenic Isle",
+    "region": "Liurnia of the Lakes",
+    "x": 0.22507,
+    "y": 0.5897
+  },
+  {
+    "id": 164429,
+    "name": "Schoolhouse Classroom",
+    "region": "Liurnia of the Lakes",
+    "x": 0.19108,
+    "y": 0.51634
+  },
+  {
+    "id": 165472,
+    "name": "Sealed Tunnel",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.39885,
+    "y": 0.36596
+  },
+  {
+    "id": 163998,
+    "name": "Seaside Ruins",
+    "region": "Limgrave",
+    "x": 0.37737,
+    "y": 0.7503
+  },
+  {
+    "id": 164049,
+    "name": "Secluded Cell",
+    "region": "Limgrave",
+    "x": 0.30161,
+    "y": 0.65805
+  },
+  {
+    "id": 166744,
+    "name": "Seethewater Cave",
+    "region": "Mt. Gelmir",
+    "x": 0.25521,
+    "y": 0.29627
+  },
+  {
+    "id": 166542,
+    "name": "Seethewater River",
+    "region": "Mt. Gelmir",
+    "x": 0.25966,
+    "y": 0.32814
+  },
+  {
+    "id": 165486,
+    "name": "Seethewater Terminus",
+    "region": "Mt. Gelmir",
+    "x": 0.2159,
+    "y": 0.30587
+  },
+  {
+    "id": 166174,
+    "name": "Sellia Backstreets",
+    "region": "Caelid",
+    "x": 0.55583,
+    "y": 0.63568
+  },
+  {
+    "id": 164383,
+    "name": "Sellia Crystal Tunnel",
+    "region": "Caelid",
+    "x": 0.54356,
+    "y": 0.62634
+  },
+  {
+    "id": 167196,
+    "name": "Sellia Hideaway",
+    "region": "Caelid",
+    "x": 0.57972,
+    "y": 0.62822
+  },
+  {
+    "id": 164381,
+    "name": "Sellia Under-Stair",
+    "region": "Caelid",
+    "x": 0.55192,
+    "y": 0.64365
+  },
+  {
+    "id": 165484,
+    "name": "Shaded Castle Inner Gate",
+    "region": "Altus Plateau",
+    "x": 0.30334,
+    "y": 0.27429
+  },
+  {
+    "id": 165483,
+    "name": "Shaded Castle Ramparts",
+    "region": "Altus Plateau",
+    "x": 0.31019,
+    "y": 0.28412
+  },
+  {
+    "id": 166439,
+    "name": "Slumbering Wolf's Shack",
+    "region": "Liurnia of the Lakes",
+    "x": 0.22011,
+    "y": 0.62251
+  },
+  {
+    "id": 164374,
+    "name": "Smoldering Church",
+    "region": "Caelid",
+    "x": 0.45786,
+    "y": 0.61994
+  },
+  {
+    "id": 164379,
+    "name": "Smoldering Wall",
+    "region": "Caelid",
+    "x": 0.50804,
+    "y": 0.6426
+  },
+  {
+    "id": 167137,
+    "name": "Snow Valley Ruins Overlook",
+    "region": "Consecrated Snowfield",
+    "x": 0.6352,
+    "y": 0.17715
+  },
+  {
+    "id": 165496,
+    "name": "Sorcerer's Isle",
+    "region": "Liurnia of the Lakes",
+    "x": 0.1745,
+    "y": 0.46538
+  },
+  {
+    "id": 163978,
+    "name": "South of the Lookout Tower",
+    "region": "Weeping Peninsula",
+    "x": 0.39985,
+    "y": 0.79519
+  },
+  {
+    "id": 164150,
+    "name": "South Raya Lucaria Gate",
+    "region": "Liurnia of the Lakes",
+    "x": 0.19916,
+    "y": 0.52583
+  },
+  {
+    "id": 164380,
+    "name": "Southern Aeonia Swamp Bank",
+    "region": "Caelid",
+    "x": 0.53853,
+    "y": 0.68463
+  },
+  {
+    "id": 168188,
+    "name": "Spiritcaller's Cave",
+    "region": "Consecrated Snowfield",
+    "x": 0.67203,
+    "y": 0.185
+  },
+  {
+    "id": 166635,
+    "name": "Starscourge Radahn",
+    "region": "Caelid",
+    "x": 0.61321,
+    "y": 0.66073
+  },
+  {
+    "id": 164168,
+    "name": "Stillwater Cave",
+    "region": "Liurnia of the Lakes",
+    "x": 0.28471,
+    "y": 0.64013
+  },
+  {
+    "id": 164032,
+    "name": "Stormfoot Catacombs",
+    "region": "Limgrave",
+    "x": 0.33531,
+    "y": 0.71056
+  },
+  {
+    "id": 164054,
+    "name": "Stormhill Shack",
+    "region": "Limgrave",
+    "x": 0.33387,
+    "y": 0.68233
+  },
+  {
+    "id": 164044,
+    "name": "Stormveil Cliffside",
+    "region": "Limgrave",
+    "x": 0.29758,
+    "y": 0.69208
+  },
+  {
+    "id": 164042,
+    "name": "Stormveil Main Gate",
+    "region": "Limgrave",
+    "x": 0.30986,
+    "y": 0.68708
+  },
+  {
+    "id": 163933,
+    "name": "Stranded Graveyard",
+    "region": "Limgrave",
+    "x": 0.35603,
+    "y": 0.74152
+  },
+  {
+    "id": 164169,
+    "name": "Study Hall Entrance",
+    "region": "Liurnia of the Lakes",
+    "x": 0.28673,
+    "y": 0.52434
+  },
+  {
+    "id": 168609,
+    "name": "Subterranean Inquisition Chamber",
+    "region": "Mt. Gelmir",
+    "x": 0.24652,
+    "y": 0.31444
+  },
+  {
+    "id": 164018,
+    "name": "Summonwater Village Outskirts",
+    "region": "Limgrave",
+    "x": 0.42396,
+    "y": 0.65368
+  },
+  {
+    "id": 167423,
+    "name": "Temple of Eiglay",
+    "region": "Mt. Gelmir",
+    "x": 0.23516,
+    "y": 0.32293
+  },
+  {
+    "id": 164159,
+    "name": "Temple Quarter",
+    "region": "Liurnia of the Lakes",
+    "x": 0.1572,
+    "y": 0.53554
+  },
+  {
+    "id": 163930,
+    "name": "The First Step",
+    "region": "Limgrave",
+    "x": 0.35217,
+    "y": 0.73791
+  },
+  {
+    "id": 164162,
+    "name": "The Four Belfries",
+    "region": "Liurnia of the Lakes",
+    "x": 0.14572,
+    "y": 0.48127
+  },
+  {
+    "id": 166045,
+    "name": "The Ravine",
+    "region": "Liurnia of the Lakes",
+    "x": 0.21465,
+    "y": 0.41579
+  },
+  {
+    "id": 164015,
+    "name": "Third Church of Marika",
+    "region": "Limgrave",
+    "x": 0.45133,
+    "y": 0.66543
+  },
+  {
+    "id": 164663,
+    "name": "Tombsward",
+    "region": "Weeping Peninsula",
+    "x": 0.3563,
+    "y": 0.81245
+  },
+  {
+    "id": 165312,
+    "name": "Tombsward Catacombs",
+    "region": "Weeping Peninsula",
+    "x": 0.36488,
+    "y": 0.79717
+  },
+  {
+    "id": 166057,
+    "name": "Tombsward Cave",
+    "region": "Weeping Peninsula",
+    "x": 0.33772,
+    "y": 0.80969
+  },
+  {
+    "id": 166540,
+    "name": "Underground Roadside",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.44473,
+    "y": 0.34696
+  },
+  {
+    "id": 167198,
+    "name": "Unsightly Catacombs",
+    "region": "Mt. Gelmir",
+    "x": 0.22264,
+    "y": 0.34932
+  },
+  {
+    "id": 164157,
+    "name": "Village of the Albinaurics",
+    "region": "Liurnia of the Lakes",
+    "x": 0.16157,
+    "y": 0.60557
+  },
+  {
+    "id": 166996,
+    "name": "Volcano Cave",
+    "region": "Mt. Gelmir",
+    "x": 0.24963,
+    "y": 0.26403
+  },
+  {
+    "id": 164575,
+    "name": "Volcano Manor",
+    "region": "Mt. Gelmir",
+    "x": 0.23365,
+    "y": 0.30559
+  },
+  {
+    "id": 167164,
+    "name": "War-Dead Catacombs",
+    "region": "Caelid",
+    "x": 0.62655,
+    "y": 0.59097
+  },
+  {
+    "id": 164058,
+    "name": "Warmaster's Shack",
+    "region": "Limgrave",
+    "x": 0.35752,
+    "y": 0.67257
+  },
+  {
+    "id": 164001,
+    "name": "Waypoint Ruins Cellar",
+    "region": "Limgrave",
+    "x": 0.40876,
+    "y": 0.72441
+  },
+  {
+    "id": 167126,
+    "name": "West Capital Rampart",
+    "region": "Leyndell, Royal Capital",
+    "x": 0.43769,
+    "y": 0.35782
+  },
+  {
+    "id": 167133,
+    "name": "Whiteridge Road",
+    "region": "Consecrated Snowfield",
+    "x": 0.65276,
+    "y": 0.20832
+  },
+  {
+    "id": 166225,
+    "name": "Windmill Heights",
+    "region": "Altus Plateau",
+    "x": 0.38205,
+    "y": 0.24967
+  },
+  {
+    "id": 166227,
+    "name": "Windmill Village",
+    "region": "Altus Plateau",
+    "x": 0.36781,
+    "y": 0.26788
+  },
+  {
+    "id": 167292,
+    "name": "Wyndham Catacombs",
+    "region": "Altus Plateau",
+    "x": 0.27106,
+    "y": 0.32079
+  },
+  {
+    "id": 167154,
+    "name": "Yelough Anix Tunnel",
+    "region": "Consecrated Snowfield",
+    "x": 0.52213,
+    "y": 0.24255
+  },
+  {
+    "id": 166547,
+    "name": "Zamor Ruins",
+    "region": "Mountaintops of the Giants",
+    "x": 0.57461,
+    "y": 0.26984
+  }
+]

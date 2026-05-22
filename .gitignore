@@ -1,0 +1,18 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.env
+.nitro
+.tanstack
+.wrangler
+.output
+.vinxi
+__unconfig*
+todos.json
+
+# large source assets for the data pipeline (re-derivable; see scripts/README)
+data-src/lod_0.jpeg
+data-src/raw.json
+data-src/lb-graces.json

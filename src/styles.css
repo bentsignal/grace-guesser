@@ -1,0 +1,131 @@
+
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --er-bg: #0a0907;
+  --er-ink: #ece2c8;
+  --er-muted: #9b9075;
+  --er-gold: #c9a227;
+  --er-gold-bright: #ecd08a;
+  --er-line: #3a3326;
+  --er-panel: rgba(14, 12, 9, 0.86);
+}
+
+body {
+  background: var(--er-bg);
+  color: var(--er-ink);
+  font-family: "EB Garamond", Georgia, serif;
+}
+
+.font-display {
+  font-family: "Cinzel", "EB Garamond", serif;
+  letter-spacing: 0.04em;
+}
+
+/* gold gradient title text */
+.er-title {
+  background: linear-gradient(180deg, #f6e7b4 0%, var(--er-gold) 55%, #8a6d1c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.er-panel {
+  background: var(--er-panel);
+  border: 1px solid var(--er-line);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(201, 162, 39, 0.06);
+  backdrop-filter: blur(6px);
+}
+
+.er-btn {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(201, 162, 39, 0.5);
+  color: var(--er-gold-bright);
+  background: linear-gradient(180deg, rgba(201, 162, 39, 0.16), rgba(201, 162, 39, 0.04));
+  transition: all 0.15s ease;
+}
+.er-btn:hover:not(:disabled) {
+  border-color: var(--er-gold);
+  color: #fff7e0;
+  background: linear-gradient(180deg, rgba(201, 162, 39, 0.3), rgba(201, 162, 39, 0.1));
+  box-shadow: 0 0 18px rgba(201, 162, 39, 0.25);
+}
+.er-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.er-chip {
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  background: rgba(201, 162, 39, 0.08);
+  color: var(--er-gold-bright);
+}
+
+/* Leaflet container background = the void around the map */
+.leaflet-container {
+  background: #07120f !important;
+  font-family: "EB Garamond", serif;
+}
+
+/* guess pin: a golden lance-point */
+.er-pin {
+  width: 18px;
+  height: 18px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: radial-gradient(circle at 35% 35%, #fff2cc, var(--er-gold) 60%, #7d6111);
+  border: 1px solid #2a210c;
+  box-shadow: 0 0 10px rgba(201, 162, 39, 0.7);
+}
+
+/* the revealed Site of Grace: a glowing golden bloom */
+.er-grace {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fffbe8 0%, var(--er-gold-bright) 35%, rgba(201, 162, 39, 0) 72%);
+  box-shadow: 0 0 24px 6px rgba(236, 208, 138, 0.7);
+  animation: er-pulse 1.8s ease-in-out infinite;
+}
+@keyframes er-pulse {
+  0%, 100% { transform: scale(0.85); opacity: 0.9; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+.er-tip.leaflet-tooltip {
+  background: var(--er-panel);
+  border: 1px solid rgba(201, 162, 39, 0.5);
+  color: var(--er-gold-bright);
+  font-family: "Cinzel", serif;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  border-radius: 3px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+}
+.er-tip.leaflet-tooltip-top::before { border-top-color: rgba(201, 162, 39, 0.5); }
+
+.leaflet-bar a {
+  background: #15120c;
+  color: var(--er-gold-bright);
+  border-color: var(--er-line);
+}
+.leaflet-bar a:hover { background: #221c10; }
+
