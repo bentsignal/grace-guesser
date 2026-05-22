@@ -6,7 +6,7 @@
     "#/*": "./src/*"
   },
   "scripts": {
-    "dev": "portless www.elden-ring-map-tap vite dev",
+    "dev": "node scripts/portless-dev.mjs",
     "dev:plain": "vite dev --port 3000",
     "proxy:lan": "portless proxy start --lan --https",
     "build": "vite build",

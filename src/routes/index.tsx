@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapBoard } from "../components/MapBoard";
-import { GRACES, dateLabel, selectDaily, todayKey } from "../game/daily";
+import { dateLabel, selectDaily, todayKey } from "../game/daily";
 import { scoreRound, totalScore } from "../game/scoring";
 import { buildShareText, emojiFor, tierFor } from "../game/share";
 import { MAX_SCORE, ROUNDS, ROUND_COUNT } from "../game/config";
@@ -161,7 +161,7 @@ function Home() {
         </div>
       )}
 
-      {phase === "intro" && <IntroOverlay onBegin={begin} dateKey={dateKey} />}
+      {phase === "intro" && <IntroOverlay onBegin={begin} />}
       {phase === "done" && (
         <ResultsOverlay dateKey={dateKey} results={results} daily={daily} />
       )}
@@ -299,10 +299,8 @@ function RevealPanel({
 
 function IntroOverlay({
   onBegin,
-  dateKey,
 }: {
   onBegin: () => void;
-  dateKey: string;
 }) {
   return (
     <div className="absolute inset-0 z-[1100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
