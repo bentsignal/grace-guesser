@@ -15,3 +15,4 @@ Then summarize changes for the user.
 
 - Do **_NOT_** leave excessive comments when writing code. Only leave comments when
   the code itself does not clearly explain what it does
+- Never attempt to start the dev server.
