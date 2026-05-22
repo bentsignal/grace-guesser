@@ -1,5 +1,6 @@
 
 @import "tailwindcss";
+@import "tw-animate-css";
 @import "leaflet/dist/leaflet.css";
 
 * {
@@ -14,6 +15,10 @@ body,
 
 body {
   margin: 0;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
 }
 
 :root {
@@ -122,6 +127,52 @@ body {
 }
 .er-tip.leaflet-tooltip-top::before { border-top-color: rgba(201, 162, 39, 0.5); }
 
+.er-editor-origin {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2px solid #ff9d85;
+  background: rgba(10, 9, 7, 0.75);
+  box-shadow: 0 0 0 3px rgba(255, 157, 133, 0.18);
+}
+
+.er-editor-target {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 2px solid #f8efd0;
+  background: radial-gradient(circle, #f8efd0 0%, var(--er-gold-bright) 38%, rgba(236, 208, 138, 0.2) 70%);
+  box-shadow: 0 0 26px rgba(236, 208, 138, 0.95);
+  cursor: grab;
+}
+
+.er-editor-marker {
+  --marker-size: 18px;
+  width: var(--marker-size);
+  height: var(--marker-size);
+  border-radius: 999px;
+  border: 2px solid rgba(236, 226, 200, 0.9);
+  background: rgba(10, 9, 7, 0.82);
+  box-shadow: 0 0 0 2px rgba(10, 9, 7, 0.5), 0 0 12px rgba(236, 208, 138, 0.24);
+  cursor: grab;
+  transform: scale(var(--er-editor-marker-scale, 1));
+  transform-origin: center;
+  transition: border-color 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, transform 0.12s ease;
+}
+
+.er-editor-marker-changed {
+  border-color: #63d297;
+  background: rgba(99, 210, 151, 0.28);
+  box-shadow: 0 0 0 2px rgba(10, 9, 7, 0.5), 0 0 16px rgba(99, 210, 151, 0.6);
+}
+
+.er-editor-marker-selected {
+  border-color: var(--er-gold-bright);
+  background: radial-gradient(circle, #f8efd0 0%, var(--er-gold-bright) 38%, rgba(236, 208, 138, 0.18) 70%);
+  box-shadow: 0 0 0 3px rgba(10, 9, 7, 0.65), 0 0 28px rgba(236, 208, 138, 0.95);
+  transform: scale(calc(var(--er-editor-marker-scale, 1) * 1.25));
+}
+
 .leaflet-bar a {
   background: #15120c;
   color: var(--er-gold-bright);
@@ -140,4 +191,3 @@ body {
     display: none;
   }
 }
-
