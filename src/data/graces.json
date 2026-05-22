@@ -479,120 +479,120 @@
     "id": 167195,
     "name": "Ancient Snow Valley Ruins",
     "region": "Consecrated Snowfield",
-    "x": 0.6236,
-    "y": 0.20487
+    "x": 0.61769,
+    "y": 0.24157
   },
   {
     "id": 167152,
     "name": "Apostate Derelict",
     "region": "Consecrated Snowfield",
-    "x": 0.52735,
-    "y": 0.15965
+    "x": 0.5189,
+    "y": 0.18411
   },
   {
     "id": 166630,
     "name": "Castle Sol Main Gate",
     "region": "Consecrated Snowfield",
-    "x": 0.62363,
-    "y": 0.16818
+    "x": 0.61805,
+    "y": 0.20165
   },
   {
     "id": 164415,
     "name": "Castle Sol Rooftop",
     "region": "Consecrated Snowfield",
-    "x": 0.63464,
-    "y": 0.1531
+    "x": 0.62727,
+    "y": 0.1874
   },
   {
     "id": 167161,
     "name": "Cave of the Forlorn",
     "region": "Consecrated Snowfield",
-    "x": 0.58947,
-    "y": 0.19906
+    "x": 0.58705,
+    "y": 0.23092
   },
   {
     "id": 164416,
     "name": "Church of the Eclipse",
     "region": "Consecrated Snowfield",
-    "x": 0.6336,
-    "y": 0.16104
+    "x": 0.62603,
+    "y": 0.19575
   },
   {
     "id": 165745,
     "name": "Consecrated Snowfield",
     "region": "Consecrated Snowfield",
-    "x": 0.55756,
-    "y": 0.25625
+    "x": 0.55599,
+    "y": 0.2923
   },
   {
     "id": 167155,
     "name": "Consecrated Snowfield Catacombs",
     "region": "Consecrated Snowfield",
-    "x": 0.58668,
-    "y": 0.23549
+    "x": 0.58473,
+    "y": 0.27368
   },
   {
     "id": 165646,
     "name": "First Church of Marika",
     "region": "Consecrated Snowfield",
-    "x": 0.69678,
-    "y": 0.21188
+    "x": 0.69412,
+    "y": 0.25698
   },
   {
     "id": 168644,
     "name": "Freezing Lake",
     "region": "Consecrated Snowfield",
-    "x": 0.65997,
-    "y": 0.16239
+    "x": 0.6534,
+    "y": 0.20089
   },
   {
     "id": 165640,
     "name": "Hidden Path to the Haligtree",
     "region": "Consecrated Snowfield",
-    "x": 0.55379,
-    "y": 0.26813
+    "x": 0.55476,
+    "y": 0.30474
   },
   {
     "id": 167120,
     "name": "Inner Consecrated Snowfield",
     "region": "Consecrated Snowfield",
-    "x": 0.55938,
-    "y": 0.2203
+    "x": 0.55512,
+    "y": 0.25222
   },
   {
     "id": 167150,
     "name": "Ordina, Liturgical Town",
     "region": "Consecrated Snowfield",
-    "x": 0.54993,
-    "y": 0.1841
+    "x": 0.54213,
+    "y": 0.2123
   },
   {
     "id": 167137,
     "name": "Snow Valley Ruins Overlook",
     "region": "Consecrated Snowfield",
-    "x": 0.6352,
-    "y": 0.17715
+    "x": 0.63082,
+    "y": 0.21315
   },
   {
     "id": 168188,
     "name": "Spiritcaller's Cave",
     "region": "Consecrated Snowfield",
-    "x": 0.67203,
-    "y": 0.185
+    "x": 0.66748,
+    "y": 0.22288
   },
   {
     "id": 167133,
     "name": "Whiteridge Road",
     "region": "Consecrated Snowfield",
-    "x": 0.65276,
-    "y": 0.20832
+    "x": 0.64781,
+    "y": 0.251
   },
   {
     "id": 167154,
     "name": "Yelough Anix Tunnel",
     "region": "Consecrated Snowfield",
-    "x": 0.52213,
-    "y": 0.24255
+    "x": 0.51767,
+    "y": 0.27069
   },
   {
     "id": 1779485438256,
@@ -663,6 +663,13 @@
     "region": "Crumbling Farum Azula",
     "x": 0.86353,
     "y": 0.49413
+  },
+  {
+    "id": 1779493621603,
+    "name": "Forbidden Lands",
+    "region": "Forbidden Lands",
+    "x": 0.51246,
+    "y": 0.37846
   },
   {
     "id": 165525,
@@ -1571,22 +1578,22 @@
     "id": 165746,
     "name": "Church of Repose",
     "region": "Mountaintops of the Giants",
-    "x": 0.61164,
-    "y": 0.28275
+    "x": 0.61304,
+    "y": 0.32701
   },
   {
     "id": 168027,
     "name": "Divine Tower of East Altus",
     "region": "Mountaintops of the Giants",
-    "x": 0.52096,
-    "y": 0.3764
+    "x": 0.52608,
+    "y": 0.42118
   },
   {
     "id": 167170,
     "name": "Divine Tower of East Altus: Gate",
     "region": "Mountaintops of the Giants",
-    "x": 0.52088,
-    "y": 0.37076
+    "x": 0.52434,
+    "y": 0.41398
   },
   {
     "id": 166545,
@@ -1599,22 +1606,22 @@
     "id": 166546,
     "name": "Foot of the Forge",
     "region": "Mountaintops of the Giants",
-    "x": 0.63518,
-    "y": 0.27845
+    "x": 0.63706,
+    "y": 0.32502
   },
   {
     "id": 166544,
     "name": "Forge of The Giants",
     "region": "Mountaintops of the Giants",
-    "x": 0.69307,
-    "y": 0.27004
+    "x": 0.69499,
+    "y": 0.32088
   },
   {
     "id": 167424,
     "name": "Giant-Conquering Hero's Grave",
     "region": "Mountaintops of the Giants",
-    "x": 0.58345,
-    "y": 0.26739
+    "x": 0.58212,
+    "y": 0.3067
   },
   {
     "id": 164431,
@@ -1627,22 +1634,22 @@
     "id": 167425,
     "name": "Giants' Mountaintop Catacombs",
     "region": "Mountaintops of the Giants",
-    "x": 0.59567,
-    "y": 0.26441
+    "x": 0.59569,
+    "y": 0.30732
   },
   {
     "id": 166548,
     "name": "Grand Lift of Rold",
     "region": "Mountaintops of the Giants",
-    "x": 0.56449,
-    "y": 0.29052
+    "x": 0.56512,
+    "y": 0.33107
   },
   {
     "id": 166547,
     "name": "Zamor Ruins",
     "region": "Mountaintops of the Giants",
-    "x": 0.57461,
-    "y": 0.26984
+    "x": 0.57392,
+    "y": 0.30877
   },
   {
     "id": 168495,
