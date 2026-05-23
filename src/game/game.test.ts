@@ -40,6 +40,22 @@ describe("selectDaily", () => {
     const b = selectDaily("2026-05-23").map((g) => g.id);
     expect(a).not.toEqual(b);
   });
+
+  it("uses the full date, including the year", () => {
+    const a = selectDaily("2026-05-22").map((g) => g.id);
+    const b = selectDaily("2027-05-22").map((g) => g.id);
+    expect(a).not.toEqual(b);
+  });
+
+  it("does not repeat graces during the recent daily cooldown", () => {
+    const seen = new Set<number>();
+
+    for (let day = 20; day <= 27; day++) {
+      const picks = selectDaily(`2026-05-${day}`).map((g) => g.id);
+      expect(picks.some((id) => seen.has(id))).toBe(false);
+      picks.forEach((id) => seen.add(id));
+    }
+  });
 });
 
 describe("scoring", () => {
