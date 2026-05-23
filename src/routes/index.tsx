@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { MapPin } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapBoard } from "../components/MapBoard";
+import { SoulsVerdict } from "../components/SoulsVerdict";
 import { dateLabel, selectDaily, todayKey } from "../game/daily";
 import { scoreRound, totalScore } from "../game/scoring";
 import { buildShareText, emojiFor, tierFor } from "../game/share";
@@ -139,6 +140,11 @@ function Home() {
           />
         )}
       </div>
+
+      {/* Souls-style splash for an extreme guess (replays each round via key) */}
+      {phase === "playing" && lastResult && (
+        <SoulsVerdict key={roundIndex} score={lastResult.baseScore} />
+      )}
 
       {/* Top bar */}
       <Header

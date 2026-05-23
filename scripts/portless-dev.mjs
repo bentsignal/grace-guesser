@@ -2,7 +2,7 @@ import { spawn, spawnSync } from "node:child_process";
 import { realpathSync } from "node:fs";
 import path from "node:path";
 
-const APP_NAME = "elden-ring-grace-guesser";
+const APP_NAME = "grace-guesser";
 const MAIN_APP_NAME = `www.${APP_NAME}`;
 const DEFAULT_BRANCHES = new Set(["main", "master"]);
 
@@ -49,7 +49,8 @@ function worktreeId(worktreePath) {
 
   const repoName = path.basename(worktreePath);
   const parentName = path.basename(path.dirname(worktreePath));
-  const fallback = parentName && parentName !== repoName ? parentName : repoName;
+  const fallback =
+    parentName && parentName !== repoName ? parentName : repoName;
 
   return sanitizeLabel(fallback);
 }
@@ -60,11 +61,7 @@ const appName =
     ? MAIN_APP_NAME
     : `${worktreeId(currentPath)}.${APP_NAME}`;
 
-const child = spawn(
-  "portless",
-  [appName, "vite", "dev"],
-  { stdio: "inherit" },
-);
+const child = spawn("portless", [appName, "vite", "dev"], { stdio: "inherit" });
 
 child.on("exit", (code, signal) => {
   if (signal) {

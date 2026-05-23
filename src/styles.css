@@ -3,6 +3,23 @@
 @import "tw-animate-css";
 @import "leaflet/dist/leaflet.css";
 
+/* OptimusPrinceps — the actual Souls-game display face, used only for the
+   post-guess verdict so its hand-carved unevenness reads authentically. */
+@font-face {
+  font-family: "Optimus Princeps";
+  src: url("/OptimusPrinceps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Optimus Princeps";
+  src: url("/OptimusPrincepsSemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -199,5 +216,83 @@ body {
 @media (pointer: coarse) {
   .leaflet-control-zoom {
     display: none;
+  }
+}
+
+/* ── Souls-style verdict ────────────────────────────────────────────────
+   Mirrors the "YOU DIED" / "ENEMY FELLED" splash: two faint, glowing copies
+   of the line sit offset to either side, then slide together and overlap in
+   the center (each at ~0.5 opacity, so the union reads full-strength) before
+   fading out. */
+.souls-verdict {
+  font-family: "Optimus Princeps", "Cinzel", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  line-height: 1;
+  /* big and top-of-center like the games, but scales down on phones */
+  font-size: clamp(2.5rem, 12vw, 8rem);
+}
+
+/* Soft dark veil behind the text for contrast (as the games dim the scene).
+   Concentrated around the text band so the map and panels stay readable; fades
+   in and out on the same timeline as the text. */
+.souls-verdict-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 75% 55% at 50% 24%,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.3) 45%,
+    rgba(0, 0, 0, 0) 75%
+  );
+  opacity: 0;
+  animation: souls-verdict-veil 6s ease-in-out forwards;
+}
+@keyframes souls-verdict-veil {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.souls-verdict-layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+  opacity: 0;
+}
+.souls-verdict-layer--left {
+  animation: souls-verdict-left 6s ease-in-out forwards;
+}
+.souls-verdict-layer--right {
+  animation: souls-verdict-right 6s ease-in-out forwards;
+}
+
+/* 6s total = 1.5s slide-in / 3s hold / 1.5s fade-out (25% / 75% breakpoints) */
+@keyframes souls-verdict-left {
+  0%   { opacity: 0;   transform: translateX(-80px); }
+  25%  { opacity: 0.5; transform: translateX(0); }
+  75%  { opacity: 0.5; transform: translateX(0); }
+  100% { opacity: 0;   transform: translateX(0); }
+}
+@keyframes souls-verdict-right {
+  0%   { opacity: 0;   transform: translateX(80px); }
+  25%  { opacity: 0.5; transform: translateX(0); }
+  75%  { opacity: 0.5; transform: translateX(0); }
+  100% { opacity: 0;   transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .souls-verdict-layer--left,
+  .souls-verdict-layer--right {
+    animation: souls-verdict-fade 4s ease-in-out forwards;
+  }
+  @keyframes souls-verdict-fade {
+    0%, 100% { opacity: 0; transform: none; }
+    20%, 70% { opacity: 0.5; transform: none; }
   }
 }

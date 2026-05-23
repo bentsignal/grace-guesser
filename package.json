@@ -1,5 +1,5 @@
 {
-  "name": "eldenring-grace-guesser",
+  "name": "grace-guesser",
   "private": true,
   "type": "module",
   "imports": {
