@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { MapPin } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapBoard } from "../components/MapBoard";
 import { dateLabel, selectDaily, todayKey } from "../game/daily";
@@ -241,13 +242,20 @@ function GuessPanel({
           {grace.name}
         </p>
         {roundCfg.showRegion ? (
-          <span className="er-chip w-fit rounded-full px-2.5 py-0.5 text-xs">
-            {grace.region}
-          </span>
+          <div className="er-region-hint mt-0.5 flex w-fit items-center gap-2 rounded-md border px-3 py-1.5">
+            <MapPin className="size-4 shrink-0 text-[var(--er-gold-bright)]" />
+            <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--er-muted)]">
+              Region
+            </span>
+            <span className="font-display text-base leading-none text-[var(--er-gold-bright)] sm:text-lg">
+              {grace.region}
+            </span>
+          </div>
         ) : (
-          <span className="text-xs italic text-[var(--er-muted)]">
+          <div className="mt-0.5 flex w-fit items-center gap-1.5 text-xs italic text-[var(--er-muted)]">
+            <MapPin className="size-4 shrink-0 opacity-60" />
             region unknown — trust your memory
-          </span>
+          </div>
         )}
       </div>
       <div className="hidden w-px shrink-0 bg-[var(--er-line)] sm:block" />

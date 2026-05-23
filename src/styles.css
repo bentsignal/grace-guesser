@@ -84,6 +84,16 @@ body {
   color: var(--er-gold-bright);
 }
 
+/* region hint: the "where to look" cue — kept brighter than a plain chip
+   so first-time players actually notice it */
+.er-region-hint {
+  border-color: rgba(201, 162, 39, 0.6);
+  background: rgba(201, 162, 39, 0.18);
+  box-shadow:
+    inset 0 0 0 1px rgba(236, 208, 138, 0.12),
+    0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
 /* Leaflet container background = the void around the map */
 .leaflet-container {
   background: #07120f !important;
