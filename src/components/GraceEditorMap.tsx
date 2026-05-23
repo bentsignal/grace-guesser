@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import type { Map as LeafletMap, Marker } from "leaflet";
-import { MAP_HEIGHT, MAP_IMAGE, MAP_WIDTH } from "../game/config";
+import { MAP_HEIGHT, MAP_WIDTH } from "../game/config";
 import type { Grace, Point } from "../game/types";
+import { addProgressiveMapOverlay } from "./mapOverlay";
 
 export interface EditableGrace extends Grace {
   isChanged: boolean;
@@ -80,7 +81,7 @@ export function GraceEditorMap({
         maxBoundsViscosity: 1,
       });
       L.control.zoom({ position: "bottomleft" }).addTo(map);
-      L.imageOverlay(MAP_IMAGE, bounds).addTo(map);
+      addProgressiveMapOverlay(L, map, bounds);
       map.setMaxBounds(bounds);
       map.fitBounds(bounds);
       map.setMinZoom(map.getBoundsZoom(bounds));

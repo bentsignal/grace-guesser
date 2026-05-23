@@ -1,10 +1,13 @@
 import type { RoundConfig } from "./types";
 
-/** Natural pixel size of public/map/lands-between.jpg (used for the Leaflet CRS). */
-export const MAP_WIDTH = 4096;
-export const MAP_HEIGHT = 3880;
+/** Natural pixel size of the full-resolution Lands Between map (used for the Leaflet CRS). */
+export const MAP_WIDTH = 9728;
+export const MAP_HEIGHT = 9216;
 export const MAP_ASPECT = MAP_HEIGHT / MAP_WIDTH;
-export const MAP_IMAGE = "/map/lands-between.jpg";
+export const MAP_IMAGE_PREVIEW = "/map/lands-between-preview.jpg";
+export const MAP_IMAGE_MEDIUM = "https://bbh15z1amz.ufs.sh/f/QNb0Pk2bBKVcKFLSLjDirKuya3siNfjOSAVEwCzHRoIhGB24";
+export const MAP_IMAGE_FULL = "https://bbh15z1amz.ufs.sh/f/QNb0Pk2bBKVcMmHzrHp69oh70FHzRabNJZmOtWCYsSKxjTGA";
+export const MAP_IMAGES = [MAP_IMAGE_PREVIEW, MAP_IMAGE_MEDIUM, MAP_IMAGE_FULL].filter(Boolean);
 
 /**
  * Five rounds of rising stakes. The grace name is always shown; the region hint

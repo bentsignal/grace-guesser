@@ -1,22 +1,18 @@
 # Elden Ring Grace Guesser
 
-A daily, Wordle-style geography game for the Lands Between. Each day you get **five
+A daily wordle-style geography game for Elden Ring. Each day you get **five
 Sites of Grace**; tap where you think each one sits on the map of the Lands Between,
 and score by how close you land. Share your result with friends.
 
-Inspired by [maptap.gg](https://maptap.gg), re-skinned for Elden Ring.
+Inspired by [maptap.gg](https://maptap.gg).
 
 ## How it works
 
 - **Five rounds, rising stakes.** Scores are quality 0–100 per round, multiplied
   `×1, ×1, ×2, ×3, ×3` → **1000 max**.
-- **The hint fades.** Rounds 1–3 reveal the grace's region; rounds 4–5 give only the
+- **The hints fade.** Rounds 1–3 reveal the grace's region; rounds 4–5 give only the
   name.
-- **Deterministic daily puzzle.** The five graces are chosen from the date with a
-  seeded PRNG (`src/game/daily.ts`) — no database, no backend. Everyone playing on
-  the same calendar day gets the same five, spanning five distinct regions.
-- **Share string** with Elden Ring–flavored tiers
-  (🌟 👑 ⚔️ 🛡️ 🩸 💀), e.g.
+- The map is the above-ground only — no DLC, no underground (river wells etc).
 
   ```
   Elden Ring Grace Guesser · May 22
@@ -28,20 +24,21 @@ Inspired by [maptap.gg](https://maptap.gg), re-skinned for Elden Ring.
 ## Stack
 
 TanStack Start + React 19, Tailwind v4, Leaflet (flat 2D map via `CRS.Simple`),
-Vitest. The map is the above-ground Lands Between only — no DLC, no underground.
+Vitest.
 
 ## Develop
 
 ```bash
-pnpm dev      # http://localhost:3000
+pnpm dev      # https://www.grace-guesser.localhost
 pnpm test     # game-logic unit tests (vitest)
-pnpm build    # production build (SSR)
+pnpm build    # production build
 ```
 
 ## The grace data
 
 `src/data/graces.json` holds **267 above-ground graces** with `{ id, name, region,
-x, y }`, where `x`/`y` are normalized `0..1` over `public/map/lands-between.jpg`.
+x, y }`, where `x`/`y` are normalized `0..1` over the full-resolution Lands
+Between map.
 
 It is generated from a MapGenie-derived dump (`data-src/site-of-grace.ts`, from the
 MIT-licensed [richiexuetang/interactive-game-maps](https://github.com/richiexuetang/interactive-game-maps))
@@ -54,8 +51,10 @@ by `scripts/build-graces.mjs`, which:
 4. projects MapGenie lat/lng → normalized map pixels with a calibrated 6-param
    affine (fitted in `scripts/fit.mjs`, verified with `scripts/overlay.mjs`).
 
-The base map image is ERDB's `lod_0.jpeg` (9728×9216), downscaled to a 4096px web
-JPEG. The 18 MB original and large raw dumps are git-ignored under `data-src/`
-(re-downloadable; see script headers).
+The map uses ERDB's `lod_0.jpeg` (9728×9216) as its coordinate space. The app
+loads `public/map/lands-between-preview.jpg` first, then progressively swaps in
+externally hosted higher-resolution map images as they finish loading. The 18 MB
+original and large raw dumps are git-ignored under `data-src/` (re-downloadable;
+see script headers).
 
 To rebuild the data: `node scripts/build-graces.mjs`.

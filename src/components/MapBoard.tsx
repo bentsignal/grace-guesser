@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import type { Map as LeafletMap, Marker, Polyline } from "leaflet";
-import { MAP_HEIGHT, MAP_IMAGE, MAP_WIDTH } from "../game/config";
+import { MAP_HEIGHT, MAP_WIDTH } from "../game/config";
 import type { Point } from "../game/types";
+import { addProgressiveMapOverlay } from "./mapOverlay";
 
 interface MapBoardProps {
   /** the answer to reveal (line + grace marker); null while guessing */
@@ -56,7 +57,7 @@ export function MapBoard({ actual, guess, onPick, interactive, actualLabel }: Ma
       });
       // Put +/- in the bottom-left so it clears the logo; hidden on touch via CSS.
       L.control.zoom({ position: "bottomleft" }).addTo(map);
-      L.imageOverlay(MAP_IMAGE, bounds).addTo(map);
+      addProgressiveMapOverlay(L, map, bounds);
       map.setMaxBounds(bounds);
       map.fitBounds(bounds);
       map.setMinZoom(map.getBoundsZoom(bounds));
