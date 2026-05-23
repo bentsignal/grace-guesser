@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { GRACES, selectDaily, todayKey, dateLabel } from "./daily";
+import { GRACES, selectDaily, todayKey, dateLabel, nextDailyReset, resetCountdownLabel } from "./daily";
 import { baseScore, mapDistance, scoreRound, totalScore } from "./scoring";
 import { buildShareText, emojiFor } from "./share";
 import { MAX_SCORE, ROUND_COUNT, ROUNDS } from "./config";
@@ -117,7 +117,25 @@ describe("share", () => {
 
 describe("date helpers", () => {
   it("formats keys", () => {
-    expect(todayKey(new Date(2026, 4, 22))).toBe("2026-05-22");
     expect(dateLabel("2026-05-22")).toBe("May 22 2026");
+  });
+
+  it("uses Eastern time for the daily key", () => {
+    expect(todayKey(new Date("2026-05-23T03:59:00.000Z"))).toBe("2026-05-22");
+    expect(todayKey(new Date("2026-05-23T04:00:00.000Z"))).toBe("2026-05-23");
+  });
+
+  it("resets at the next Eastern midnight", () => {
+    expect(nextDailyReset(new Date("2026-05-23T12:00:00.000Z")).toISOString()).toBe(
+      "2026-05-24T04:00:00.000Z",
+    );
+    expect(nextDailyReset(new Date("2026-01-23T12:00:00.000Z")).toISOString()).toBe(
+      "2026-01-24T05:00:00.000Z",
+    );
+  });
+
+  it("formats the reset countdown", () => {
+    expect(resetCountdownLabel(new Date("2026-05-23T23:15:00.000Z"))).toBe("4 hours 45 minutes");
+    expect(resetCountdownLabel(new Date("2026-05-24T03:15:00.000Z"))).toBe("45 minutes");
   });
 });

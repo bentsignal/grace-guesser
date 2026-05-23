@@ -3,7 +3,7 @@ import { MapPin } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MapBoard } from "../components/MapBoard";
 import { SoulsVerdict } from "../components/SoulsVerdict";
-import { dateLabel, selectDaily, todayKey } from "../game/daily";
+import { dateLabel, resetCountdownLabel, selectDaily, todayKey } from "../game/daily";
 import { scoreRound, totalScore } from "../game/scoring";
 import { buildShareText, emojiFor, tierFor } from "../game/share";
 import { MAX_SCORE, ROUNDS, ROUND_COUNT } from "../game/config";
@@ -54,6 +54,27 @@ function Home() {
   );
 
   useEffect(() => {
+    const syncDate = () => {
+      const key = todayKey();
+      setDateKey((currentKey) => {
+        if (currentKey === key) return currentKey;
+
+        const saved = loadSaved(key);
+        if (saved && saved.results.length === ROUND_COUNT) {
+          setResults(saved.results);
+          setPhase("done");
+        } else {
+          setPhase("intro");
+          setRoundIndex(0);
+          setResults([]);
+          setGuess(null);
+          setRevealed(false);
+        }
+
+        return key;
+      });
+    };
+
     const key = todayKey();
     setDateKey(key);
     const saved = loadSaved(key);
@@ -62,6 +83,8 @@ function Home() {
       setPhase("done");
     }
     setMounted(true);
+    const id = window.setInterval(syncDate, 30_000);
+    return () => window.clearInterval(id);
   }, []);
 
   const current = daily[roundIndex];
@@ -357,6 +380,14 @@ function ResultsOverlay({
   const total = totalScore(results);
   const shareText = buildShareText(results, dateKey, total);
   const [copied, setCopied] = useState(false);
+  const [resetCountdown, setResetCountdown] = useState(() => resetCountdownLabel());
+
+  useEffect(() => {
+    const update = () => setResetCountdown(resetCountdownLabel());
+    update();
+    const id = window.setInterval(update, 30_000);
+    return () => window.clearInterval(id);
+  }, []);
 
   const copy = useCallback(async () => {
     await navigator.clipboard.writeText(shareText);
@@ -436,7 +467,7 @@ function ResultsOverlay({
             {copied ? "Copied to clipboard" : "Copy verdict"}
           </button>
           <p className="mt-3 text-center text-xs text-[var(--er-muted)]">
-            Return at dawn for five new graces.
+            New graces in {resetCountdown}.
           </p>
         </div>
       </div>

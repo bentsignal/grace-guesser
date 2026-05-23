@@ -3,15 +3,26 @@ import type { Grace } from "./types";
 import { ROUND_COUNT } from "./config";
 
 export const GRACES = gracesData as Grace[];
+export const DAILY_TIME_ZONE = "America/New_York";
 const RECENT_DAILY_COOLDOWN_DAYS = 7;
+const DAY_MS = 86_400_000;
 const SCHEDULE_EPOCH_DAY = dayNumber("2026-01-01");
 
-/** Local calendar date as YYYY-MM-DD (the puzzle key; resets at local midnight). */
+function easternDateParts(d: Date): { y: number; m: number; d: number } {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: DAILY_TIME_ZONE,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(d);
+  const get = (type: string) => Number(parts.find((part) => part.type === type)?.value);
+  return { y: get("year"), m: get("month"), d: get("day") };
+}
+
+/** Eastern calendar date as YYYY-MM-DD (the puzzle key; resets at Eastern midnight). */
 export function todayKey(d: Date = new Date()): string {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
+  const { y, m, d: day } = easternDateParts(d);
+  return `${y}-${String(m).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 
 /** Human label like "May 22 2026" for a YYYY-MM-DD key. */
@@ -26,11 +37,50 @@ export function dateLabel(key: string): string {
 
 function dayNumber(key: string): number {
   const [y, m, d] = key.split("-").map(Number);
-  return Math.floor(Date.UTC(y, m - 1, d) / 86_400_000);
+  return Math.floor(Date.UTC(y, m - 1, d) / DAY_MS);
 }
 
 function keyFromDayNumber(day: number): string {
-  return new Date(day * 86_400_000).toISOString().slice(0, 10);
+  return new Date(day * DAY_MS).toISOString().slice(0, 10);
+}
+
+function easternMidnightUtc(key: string): Date {
+  const [y, m, d] = key.split("-").map(Number);
+  const desiredLocal = Date.UTC(y, m - 1, d, 0, 0, 0);
+  let utc = desiredLocal;
+
+  for (let i = 0; i < 3; i++) {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: DAILY_TIME_ZONE,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hourCycle: "h23",
+    }).formatToParts(new Date(utc));
+    const get = (type: string) => Number(parts.find((part) => part.type === type)?.value);
+    const actualLocal = Date.UTC(get("year"), get("month") - 1, get("day"), get("hour"), get("minute"), get("second"));
+    utc += desiredLocal - actualLocal;
+  }
+
+  return new Date(utc);
+}
+
+export function nextDailyReset(d: Date = new Date()): Date {
+  return easternMidnightUtc(keyFromDayNumber(dayNumber(todayKey(d)) + 1));
+}
+
+export function resetCountdownLabel(d: Date = new Date()): string {
+  const remainingMs = Math.max(0, nextDailyReset(d).getTime() - d.getTime());
+  const totalMinutes = Math.max(1, Math.ceil(remainingMs / 60_000));
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+
+  if (hours === 0) return `${minutes} ${minutes === 1 ? "minute" : "minutes"}`;
+  if (minutes === 0) return `${hours} ${hours === 1 ? "hour" : "hours"}`;
+  return `${hours} ${hours === 1 ? "hour" : "hours"} ${minutes} ${minutes === 1 ? "minute" : "minutes"}`;
 }
 
 /** Deterministic 32-bit hash of a string (FNV-1a). */
