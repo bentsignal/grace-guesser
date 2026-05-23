@@ -38,6 +38,6 @@ export function buildShareText(
     `Elden Ring Grace Guesser · ${label}`,
     line.trim(),
     `Runes: ${total}/${MAX_SCORE}`,
-    "💍 www.grace-guesser.com",
+    "💍 https://www.grace-guesser.com",
   ].join("\n");
 }
