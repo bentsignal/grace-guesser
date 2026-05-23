@@ -10,11 +10,20 @@ import type { Grace, Point, RoundResult } from "../game/types";
 export const Route = createFileRoute("/")({ component: Home });
 
 type Phase = "intro" | "playing" | "done";
-const STORAGE_PREFIX = "er-maptap:";
+const STORAGE_PREFIX = "er-grace-guesser:";
 
 interface SavedGame {
   dateKey: string;
   results: RoundResult[];
+}
+
+function AppTitle({ className = "" }: { className?: string }) {
+  return (
+    <span className={`block leading-tight ${className}`}>
+      <span className="block">Elden Ring</span>
+      <span className="block">Grace Guesser</span>
+    </span>
+  );
 }
 
 function loadSaved(dateKey: string): SavedGame | null {
@@ -99,7 +108,9 @@ function Home() {
   if (!mounted) {
     return (
       <div className="flex h-dvh items-center justify-center bg-[var(--er-bg)]">
-        <p className="font-display er-title text-2xl">Elden Ring MapTap</p>
+        <p className="font-display er-title text-center text-2xl">
+          <AppTitle />
+        </p>
       </div>
     );
   }
@@ -183,8 +194,8 @@ function Header({
   return (
     <div className="pointer-events-none absolute inset-x-0 top-0 z-[1000] flex items-start justify-between p-3 sm:p-4">
       <div className="er-panel pointer-events-auto rounded-md px-3 py-2">
-        <h1 className="font-display er-title text-lg leading-none sm:text-xl">
-          Elden Ring MapTap
+        <h1 className="font-display er-title text-lg sm:text-xl">
+          <AppTitle />
         </h1>
         <p className="mt-1 text-xs text-[var(--er-muted)]">
           {dateLabel(dateKey)}
@@ -302,11 +313,11 @@ function IntroOverlay({ onBegin }: { onBegin: () => void }) {
     <div className="absolute inset-0 z-[1100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm">
       <div className="er-panel max-w-md rounded-xl p-7 flex flex-col gap-4 text-center">
         <h1 className="font-display er-title text-3xl sm:text-4xl">
-          Elden Ring MapTap
+          <AppTitle />
         </h1>
         <div className="mx-auto h-px w-24 mt-2 mb-1 bg-[var(--er-line)]" />
         <p className="text-[var(--er-ink)]">
-          Tap where you believe the grace lies.
+          Guess where the Site of Grace is on the map.
         </p>
         <div className="mx-auto h-px w-24 mt-2 mb-3 bg-[var(--er-line)]" />
         <button
