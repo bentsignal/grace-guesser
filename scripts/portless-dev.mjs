@@ -2,7 +2,7 @@ import { spawn, spawnSync } from "node:child_process";
 import { realpathSync } from "node:fs";
 import path from "node:path";
 
-const APP_NAME = "elden-ring-map-tap";
+const APP_NAME = "elden-ring-grace-guesser";
 const MAIN_APP_NAME = `www.${APP_NAME}`;
 const DEFAULT_BRANCHES = new Set(["main", "master"]);
 

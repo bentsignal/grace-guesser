@@ -93,8 +93,9 @@ describe("share", () => {
       r.baseScore = [100, 88, 80, 87, 25][i];
     });
     const text = buildShareText(results, "2026-05-22", 679);
-    expect(text).toContain("Elden Ring MapTap · May 22");
+    expect(text).toContain("Elden Ring Grace Guesser · May 22");
     expect(text).toContain("Runes: 679/1000");
+    expect(text).toContain("💍 www.grace-guesser.com");
   });
 });
 

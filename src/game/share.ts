@@ -24,7 +24,7 @@ export function emojiFor(baseScore: number): string {
   return tierFor(baseScore).emoji;
 }
 
-/** The copy-paste result, e.g. "Elden Ring MapTap · May 22 …". */
+/** The copy-paste result, e.g. "Elden Ring Grace Guesser · May 22 ...". */
 export function buildShareText(
   results: RoundResult[],
   dateKey: string,
@@ -35,8 +35,9 @@ export function buildShareText(
     .map((r) => `${String(r.baseScore).padStart(2, " ")}${emojiFor(r.baseScore)}`)
     .join("  ");
   return [
-    `Elden Ring MapTap · ${label}`,
+    `Elden Ring Grace Guesser · ${label}`,
     line.trim(),
     `Runes: ${total}/${MAX_SCORE}`,
+    "💍 www.grace-guesser.com",
   ].join("\n");
 }

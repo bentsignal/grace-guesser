@@ -20,7 +20,7 @@ export const Route = createRootRoute({
           'A daily Elden Ring guessing game — pinpoint five Sites of Grace on the map of the Lands Between and share your score.',
       },
       {
-        title: 'Elden Ring MapTap',
+        title: 'Elden Ring Grace Guesser',
       },
     ],
     links: [

@@ -1,6 +1,6 @@
 ### Repository overview
 
-This project is called Elden Ring Map Tap. Every day users can log in to guess the location on the map of five different graces inside of Elden Ring. They then get a score that they can share with their friends.
+This project is called Elden Ring Grace Guesser. Every day users can log in to guess the location on the map of five different graces inside of Elden Ring. They then get a score that they can share with their friends.
 
 ## Required Validation After Changes
 

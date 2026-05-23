@@ -59,7 +59,7 @@ function shuffle<T>(arr: readonly T[], rng: () => number): T[] {
  * graces from distinct regions so the five rounds span the map.
  */
 export function selectDaily(key: string, pool: Grace[] = GRACES): Grace[] {
-  const rng = mulberry32(hashStr(`eldenring-maptap:${key}`));
+  const rng = mulberry32(hashStr(`eldenring-grace-guesser:${key}`));
   const shuffled = shuffle(pool, rng);
 
   const picked: Grace[] = [];

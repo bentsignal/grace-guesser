@@ -1,4 +1,4 @@
-# Elden Ring MapTap
+# Elden Ring Grace Guesser
 
 A daily, Wordle-style geography game for the Lands Between. Each day you get **five
 Sites of Grace**; tap where you think each one sits on the map of the Lands Between,
@@ -19,9 +19,10 @@ Inspired by [maptap.gg](https://maptap.gg), re-skinned for Elden Ring.
   (🌟 👑 ⚔️ 🛡️ 🩸 💀), e.g.
 
   ```
-  Elden Ring MapTap · May 22
+  Elden Ring Grace Guesser · May 22
   95👑  88👑  80👑  87👑  25🩸
-  Grace: 679/1000
+  Runes: 679/1000
+  💍 www.grace-guesser.com
   ```
 
 ## Stack
